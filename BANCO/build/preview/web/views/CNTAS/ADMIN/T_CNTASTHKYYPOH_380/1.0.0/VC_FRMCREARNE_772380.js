@@ -77,7 +77,8 @@ version : '1.0.0',
 user : $scope.vc.args.user
 },
 entityNames: {
-Cliente: "Cliente"
+Cliente: "Cliente",
+FiltroCedula: "FiltroCedula"
 },
 entities : {
 Cliente : {
@@ -89,14 +90,53 @@ cedula: 'AT92_CEDULACT161'
 _pks: [],
 _entityId: 'EN_CLIENTENW_161',
 _entityVersion: '1.0.0',
+_transient: false },
+FiltroCedula : {
+cedula: 'AT12_CEDULAZI498'
+,
+_pks: [],
+_entityId: 'EN_FILTROCAD_498',
+_entityVersion: '1.0.0',
 _transient: false }
 },
 relations : [
 ]
 };
 $scope.vc.queryProperties = {};
+$scope.vc.queryProperties.Q_CLIETNEE_OB83 = {
+autoCrud : false
+};
+$scope.vc.getRequestQuery_Q_CLIETNEE_OB83= function(){
+var parametersAux = {};
+if($.isEmptyObject($scope.vc.queries.Q_CLIETNEE_OB83_filters)){
+parametersAux = {
+};
+}else{
+var filters = $scope.vc.queries.Q_CLIETNEE_OB83_filters;
+parametersAux = {
+cedula : filters.cedula
+};
+}
+return {
+mainEntityPk : {
+entityId : 'EN_CLIENTENW_161',
+version : '1.0.0'
+},
+queryPk :{
+queryId: 'Q_CLIETNEE_OB83',
+version : '1.0.0'
+},
+parameters : parametersAux,
+filters:{},
+updateParameters : function(){
+}
+}
+};
+$scope.vc.queries.Q_CLIETNEE_OB83_filters = {};
 var defaultValues = {
 Cliente:{
+},
+FiltroCedula:{
 }
 };
 $scope.vc.channelDefaultValues = function(entityName, attributeName, valueIfNotExist){
@@ -158,11 +198,8 @@ dsgnrUtils.container.validateOnEnter(e, $scope.vc);
 $scope.vc.viewState.VC_FRMCREARNE_772380 = {
 style: []
 };
-$scope.vc.model.Cliente = {
-apellido: $scope.vc.channelDefaultValues("Cliente","apellido"),
-nombre: $scope.vc.channelDefaultValues("Cliente","nombre"),
-codigoCliente: $scope.vc.channelDefaultValues("Cliente","codigoCliente"),
-cedula: $scope.vc.channelDefaultValues("Cliente","cedula")
+$scope.vc.model.FiltroCedula = {
+cedula: $scope.vc.channelDefaultValues("FiltroCedula","cedula")
 };
 //ViewState - Group: Group1623
 $scope.vc.createViewState({
@@ -173,12 +210,12 @@ id: "G_FRMCREARNR_624568"
 ,enabled: designer.constants.mode.All
 ,visible: designer.constants.mode.All
 });
-//ViewState - Entity: Cliente, Attribute: cedula
+//ViewState - Entity: FiltroCedula, Attribute: cedula
 $scope.vc.createViewState({
-id: "VA_CEDULABXANCKZGY_431568"
+id: "VA_CEDULAFLRIRDOWN_173568"
 ,componentStyle: []
 ,label: "Cedula"
-,validationCode: 32
+,validationCode: 0
 ,readOnly: designer.constants.mode.Query
 ,enabled: designer.constants.mode.All
 ,visible: designer.constants.mode.All
@@ -193,43 +230,467 @@ id: "VA_VABUTTONGUDQHVD_413568"
 ,enabled: designer.constants.mode.All
 ,visible: designer.constants.mode.All
 });
-//ViewState - Group: Group2176
+//ViewState - Group: Group2479
 $scope.vc.createViewState({
-id: "G_FRMCREARUE_813568"
+id: "G_FRMCREACET_875568"
 ,hasId: true
 ,componentStyle: []
-,label: 'Group2176'
+,label: 'Group2479'
+,enabled: designer.constants.mode.Query
+,visible: designer.constants.mode.Query
+});
+$scope.vc.types.Cliente = kendo.data.Model.define({
+id: "dsgnrId",
+fields: {
+dsgnrId: {type: "string"},
+trackId: {type: "string"},
+cedula: {
+type: "string",
+editable: true
+,defaultValue: $scope.vc.channelDefaultValues("Cliente","cedula", '')
+},
+codigoCliente: {
+type: "string",
+editable: true
+,defaultValue: $scope.vc.channelDefaultValues("Cliente","codigoCliente", '')
+},
+apellido: {
+type: "string",
+editable: true
+,defaultValue: $scope.vc.channelDefaultValues("Cliente","apellido", '')
+},
+nombre: {
+type: "string",
+editable: true
+,defaultValue: $scope.vc.channelDefaultValues("Cliente","nombre", '')
+}
+}
+});
+$scope.vc.model.Cliente = new kendo.data.DataSource({
+transport: {
+read: function(options) {
+var promise = false;
+var isRefresh = (angular.isDefined(options.data) && angular.isDefined(options.data.refresh));
+if (isRefresh || !designer.enums.hasFlag(designer.constants.mode.Insert, $scope.vc.mode)) {
+var queryId = 'Q_CLIETNEE_OB83';
+var queryRequest = $scope.vc.getRequestQuery_Q_CLIETNEE_OB83();
+if (queryId && queryRequest) {
+var queryLoaded = queryRequest.loaded;
+if (angular.isUndefined(queryLoaded) || isRefresh === true) {
+queryRequest.loaded = true;
+queryRequest.updateParameters();
+promise = true;
+$scope.vc.executeQuery(
+'QV_FS83_SVX63',
+queryRequest,
+queryRequest.mainEntityPk.entityId,
+true,
+function (response) {
+if(response.success){
+var result = response.data['RESULT' + queryId];
+if (angular.isUndefined(result)){
+result = [];
+}
+if (angular.isDefined(result) && angular.isArray(result)) {
+options.success(result);
+} else {
+options.success([]);
+}
+}else{
+options.error([]);
+}
+},
+(function () {
+var queryOptions = options.data;
+var queryView = {'allowPaging': false,'pageSize': 0};
+function config (queryOptions,queryView) {
+var result = undefined;
+if (queryView.allowPaging === true) {
+result = {};
+if (angular.isDefined(queryOptions.appendRecords) && queryOptions.appendRecords===true) {
+result.appendRecords=true;
+}
+result.pageSize = queryView.pageSize;
+}
+return result;
+}
+return config(queryOptions,queryView);
+}())
+);
+}
+}
+}
+if (promise === false) {
+options.error({xhr:{}});
+}
+},
+create: function(options) {
+var model = options.data;
+model.dsgnrId = designer.utils.uuid();
+options.success(model);
+},
+update: function(options) {
+var model = options.data;
+options.success(model);
+},
+destroy: function(options) {
+var model = options.data;
+options.success(model);
+}
+},
+schema: {
+model : $scope.vc.types.Cliente
+},
+aggregate: [
+],
+error: function(e) {
+if(e.xhr.message && e.xhr.message === 'DeletingError'){
+$("#QV_FS83_SVX63").data("kendoExtGrid").cancelChanges();
+}
+}
+});
+$scope.vc.queries.Q_CLIETNEE_OB83 = $scope.vc.model.Cliente;
+$scope.vc.trackers.Cliente = new $scope.vc.crud.DataSourceTracker(
+$scope.vc.metadata.entities.Cliente
+);
+$scope.vc.model.Cliente.bind('change',function(e){
+$scope.vc.trackers.Cliente.track(e);
+});
+$scope.vc.grids.QV_FS83_SVX63 = {};
+$scope.vc.grids.QV_FS83_SVX63.queryId = 'Q_CLIETNEE_OB83';
+$scope.vc.viewState.QV_FS83_SVX63 = {
+style: []
+};
+$scope.vc.viewState.QV_FS83_SVX63.column = {};
+$scope.vc.grids.QV_FS83_SVX63.editable =
+{
+mode:'inline'
+,confirmation:false
+};
+$scope.vc.grids.QV_FS83_SVX63.events = {
+customRowClick: function (e, controlId, entity, idGrid, commandName) {
+var grid = $scope.vc.getElementGrid(idGrid);
+var dataItem = grid.dataItem($(e.currentTarget).closest("tr"));
+var args = {
+rowData: dataItem,
+rowIndex: grid.dataSource.indexOf(dataItem),
+nameEntityGrid: entity,
+refreshData: false,
+stopPropagation: false,
+commandName: commandName
+};
+$scope.vc.executeGridRowCommand(controlId, args);
+if (args.refreshData){
+grid.refresh();
+}
+if (args.stopPropagation) {
+e.stopImmediatePropagation();
+e.stopPropagation();
+}
+},
+cancel: function (e) {
+$scope.vc.trackers.Cliente.cancelTrackedChanges(e.model);
+},
+edit: function(e) {
+$scope.vc.grids.QV_FS83_SVX63.selectedRow = e.model;
+var commandCell = $scope.vc.getCommandCellData(e.container);
+var titleUpdate = $filter('translate')('Aceptar');
+var titleCancel = $filter('translate')('Cancelar');
+commandCell.html("<a class='btn btn-default k-grid-update cb-row-image-button' onmousedown='this.focus()' title='"+titleUpdate+"' href='#'><span class='fa fa-check-circle'></span></a><a class='btn btn-default k-grid-cancel cb-row-image-button' title='"+titleCancel+"' href='#'><span class='fa fa-times-circle'></span></a>");
+$scope.vc.validateForm();
+},
+dataBound: function(e) {
+var index;
+var grid = e.sender;
+$scope.vc.gridDataBound("QV_FS83_SVX63", false, grid);
+$scope.vc.hideShowColumns("QV_FS83_SVX63", grid);
+var dataView = null;
+dataView = this.dataSource.view();
+var styleName, iStyle;
+for(var i = 0; i < dataView.length; i++) {
+if (typeof $scope.vc.viewState.QV_FS83_SVX63.rows[dataView[i].uid] != "undefined") {
+for(iStyle = 0; iStyle< $scope.vc.viewState.QV_FS83_SVX63.rows[dataView[i].uid].style.length; iStyle++){
+styleName = $scope.vc.viewState.QV_FS83_SVX63.rows[dataView[i].uid].style[iStyle];
+if($("#QV_FS83_SVX63 tbody").find("tr[data-uid=" + dataView[i].uid + "]").hasClass(styleName)===false){
+$("#QV_FS83_SVX63 tbody").find("tr[data-uid=" + dataView[i].uid + "]").addClass(styleName);
+}
+}
+}
+}
+}
+};
+//Comandos de registros del Grid
+$scope.vc.grids.QV_FS83_SVX63.columns = [];
+//Registros de fila del Grid
+$scope.vc.viewState.QV_FS83_SVX63.rows = [];
+//Controles de edicion en linea del Grid
+$scope.vc.viewState.QV_FS83_SVX63.column.cedula = {
+title: 'cedula',
+titleArgs: {},
+tooltip: '',
+enabled:designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+hidden:!designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+readOnly:designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode),
+decimals: 0,
+style: [],
+validationCode: 32,
+componentId:'VA_TEXTINPUTBOXCAU_799568',
+element: []
+};
+$scope.vc.grids.QV_FS83_SVX63.AT92_CEDULACT161 = {
+control: function(container, options) {
+var textInput =
+$('<input/>' , {
+'name':options.field
+,'data-bind':"value:" + options.field
+,'ng-disabled':"!vc.viewState.QV_FS83_SVX63.column.cedula.enabled"
+,'ng-readonly':"designer.enums.hasFlag(designer.constants.mode.Query,vc.mode)"
+,'ng-show':"designer.enums.hasFlag(designer.constants.mode.All,vc.mode)"
+,'id': "VA_TEXTINPUTBOXCAU_799568",'required':''
+,'data-required-msg': 'cedula'+' '+ $filter('translate')('is required.')
+,'data-validation-code':"{{vc.viewState.QV_FS83_SVX63.column.cedula.validationCode}}"
+,'type':"text"
+,'class':"k-textbox"
+,'maxlength':30
+,'ng-model-onblur': ""
+,'ng-class': "vc.viewState.QV_FS83_SVX63.column.cedula.style"
+});
+textInput.appendTo(container);
+}
+};
+$scope.vc.viewState.QV_FS83_SVX63.column.codigoCliente = {
+title: 'codigoCliente',
+titleArgs: {},
+tooltip: '',
+enabled:designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+hidden:!designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+readOnly:designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode),
+decimals: 0,
+style: [],
+validationCode: 32,
+componentId:'VA_TEXTINPUTBOXUNT_806568',
+element: []
+};
+$scope.vc.grids.QV_FS83_SVX63.AT76_CODIGOCE161 = {
+control: function(container, options) {
+var textInput =
+$('<input/>' , {
+'name':options.field
+,'data-bind':"value:" + options.field
+,'ng-disabled':"!vc.viewState.QV_FS83_SVX63.column.codigoCliente.enabled"
+,'ng-readonly':"designer.enums.hasFlag(designer.constants.mode.Query,vc.mode)"
+,'ng-show':"designer.enums.hasFlag(designer.constants.mode.All,vc.mode)"
+,'id': "VA_TEXTINPUTBOXUNT_806568",'required':''
+,'data-required-msg': 'codigoCliente'+' '+ $filter('translate')('is required.')
+,'data-validation-code':"{{vc.viewState.QV_FS83_SVX63.column.codigoCliente.validationCode}}"
+,'type':"text"
+,'class':"k-textbox"
+,'maxlength':30
+,'ng-model-onblur': ""
+,'ng-class': "vc.viewState.QV_FS83_SVX63.column.codigoCliente.style"
+});
+textInput.appendTo(container);
+}
+};
+$scope.vc.viewState.QV_FS83_SVX63.column.apellido = {
+title: 'apellido',
+titleArgs: {},
+tooltip: '',
+enabled:designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+hidden:!designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+readOnly:designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode),
+decimals: 0,
+style: [],
+validationCode: 32,
+componentId:'VA_TEXTINPUTBOXSKO_271568',
+element: []
+};
+$scope.vc.grids.QV_FS83_SVX63.AT35_APELLIDO161 = {
+control: function(container, options) {
+var textInput =
+$('<input/>' , {
+'name':options.field
+,'data-bind':"value:" + options.field
+,'ng-disabled':"!vc.viewState.QV_FS83_SVX63.column.apellido.enabled"
+,'ng-readonly':"designer.enums.hasFlag(designer.constants.mode.Query,vc.mode)"
+,'ng-show':"designer.enums.hasFlag(designer.constants.mode.All,vc.mode)"
+,'id': "VA_TEXTINPUTBOXSKO_271568",'required':''
+,'data-required-msg': 'apellido'+' '+ $filter('translate')('is required.')
+,'data-validation-code':"{{vc.viewState.QV_FS83_SVX63.column.apellido.validationCode}}"
+,'type':"text"
+,'class':"k-textbox"
+,'maxlength':30
+,'ng-model-onblur': ""
+,'ng-class': "vc.viewState.QV_FS83_SVX63.column.apellido.style"
+});
+textInput.appendTo(container);
+}
+};
+$scope.vc.viewState.QV_FS83_SVX63.column.nombre = {
+title: 'nombre',
+titleArgs: {},
+tooltip: '',
+enabled:designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+hidden:!designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode),
+readOnly:designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode),
+decimals: 0,
+style: [],
+validationCode: 32,
+componentId:'VA_TEXTINPUTBOXRFK_245568',
+element: []
+};
+$scope.vc.grids.QV_FS83_SVX63.AT44_NOMBRENN161 = {
+control: function(container, options) {
+var textInput =
+$('<input/>' , {
+'name':options.field
+,'data-bind':"value:" + options.field
+,'ng-disabled':"!vc.viewState.QV_FS83_SVX63.column.nombre.enabled"
+,'ng-readonly':"designer.enums.hasFlag(designer.constants.mode.Query,vc.mode)"
+,'ng-show':"designer.enums.hasFlag(designer.constants.mode.All,vc.mode)"
+,'id': "VA_TEXTINPUTBOXRFK_245568",'required':''
+,'data-required-msg': 'nombre'+' '+ $filter('translate')('is required.')
+,'data-validation-code':"{{vc.viewState.QV_FS83_SVX63.column.nombre.validationCode}}"
+,'type':"text"
+,'class':"k-textbox"
+,'maxlength':30
+,'ng-model-onblur': ""
+,'ng-class': "vc.viewState.QV_FS83_SVX63.column.nombre.style"
+});
+textInput.appendTo(container);
+}
+};
+//Creacion de columnas del Grid
+if (designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode)) {
+$scope.vc.grids.QV_FS83_SVX63.columns.push({
+field: 'cedula',
+title: '{{vc.viewState.QV_FS83_SVX63.column.cedula.title|translate:vc.viewState.QV_FS83_SVX63.column.cedula.titleArgs}}',
+width:$scope.vc.viewState.QV_FS83_SVX63.column.cedula.width,
+format: $scope.vc.viewState.QV_FS83_SVX63.column.cedula.format,
+editor: $scope.vc.grids.QV_FS83_SVX63.AT92_CEDULACT161.control,
+template: "<span ng-class='vc.viewState.QV_FS83_SVX63.column.cedula.element[dataItem.dsgnrId].style' ng-bind='vc.getStringColumnFormat(dataItem.cedula, \"QV_FS83_SVX63\", \"cedula\")'></span>",
+attributes: {"class":"", "ng-class": "vc.viewState.QV_FS83_SVX63.column.cedula.style", "title": "{{vc.viewState.QV_FS83_SVX63.column.cedula.tooltip|translate}}"},
+hidden: $scope.vc.viewState.QV_FS83_SVX63.column.cedula.hidden
+});
+}
+if (designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode)) {
+$scope.vc.grids.QV_FS83_SVX63.columns.push({
+field: 'codigoCliente',
+title: '{{vc.viewState.QV_FS83_SVX63.column.codigoCliente.title|translate:vc.viewState.QV_FS83_SVX63.column.codigoCliente.titleArgs}}',
+width:$scope.vc.viewState.QV_FS83_SVX63.column.codigoCliente.width,
+format: $scope.vc.viewState.QV_FS83_SVX63.column.codigoCliente.format,
+editor: $scope.vc.grids.QV_FS83_SVX63.AT76_CODIGOCE161.control,
+template: "<span ng-class='vc.viewState.QV_FS83_SVX63.column.codigoCliente.element[dataItem.dsgnrId].style' ng-bind='vc.getStringColumnFormat(dataItem.codigoCliente, \"QV_FS83_SVX63\", \"codigoCliente\")'></span>",
+attributes: {"class":"", "ng-class": "vc.viewState.QV_FS83_SVX63.column.codigoCliente.style", "title": "{{vc.viewState.QV_FS83_SVX63.column.codigoCliente.tooltip|translate}}"},
+hidden: $scope.vc.viewState.QV_FS83_SVX63.column.codigoCliente.hidden
+});
+}
+if (designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode)) {
+$scope.vc.grids.QV_FS83_SVX63.columns.push({
+field: 'apellido',
+title: '{{vc.viewState.QV_FS83_SVX63.column.apellido.title|translate:vc.viewState.QV_FS83_SVX63.column.apellido.titleArgs}}',
+width:$scope.vc.viewState.QV_FS83_SVX63.column.apellido.width,
+format: $scope.vc.viewState.QV_FS83_SVX63.column.apellido.format,
+editor: $scope.vc.grids.QV_FS83_SVX63.AT35_APELLIDO161.control,
+template: "<span ng-class='vc.viewState.QV_FS83_SVX63.column.apellido.element[dataItem.dsgnrId].style' ng-bind='vc.getStringColumnFormat(dataItem.apellido, \"QV_FS83_SVX63\", \"apellido\")'></span>",
+attributes: {"class":"", "ng-class": "vc.viewState.QV_FS83_SVX63.column.apellido.style", "title": "{{vc.viewState.QV_FS83_SVX63.column.apellido.tooltip|translate}}"},
+hidden: $scope.vc.viewState.QV_FS83_SVX63.column.apellido.hidden
+});
+}
+if (designer.enums.hasFlag(designer.constants.mode.All, $scope.vc.mode)) {
+$scope.vc.grids.QV_FS83_SVX63.columns.push({
+field: 'nombre',
+title: '{{vc.viewState.QV_FS83_SVX63.column.nombre.title|translate:vc.viewState.QV_FS83_SVX63.column.nombre.titleArgs}}',
+width:$scope.vc.viewState.QV_FS83_SVX63.column.nombre.width,
+format: $scope.vc.viewState.QV_FS83_SVX63.column.nombre.format,
+editor: $scope.vc.grids.QV_FS83_SVX63.AT44_NOMBRENN161.control,
+template: "<span ng-class='vc.viewState.QV_FS83_SVX63.column.nombre.element[dataItem.dsgnrId].style' ng-bind='vc.getStringColumnFormat(dataItem.nombre, \"QV_FS83_SVX63\", \"nombre\")'></span>",
+attributes: {"class":"", "ng-class": "vc.viewState.QV_FS83_SVX63.column.nombre.style", "title": "{{vc.viewState.QV_FS83_SVX63.column.nombre.tooltip|translate}}"},
+hidden: $scope.vc.viewState.QV_FS83_SVX63.column.nombre.hidden
+});
+}
+$scope.vc.viewState.QV_FS83_SVX63.column.edit = {
+element:[]
+};
+$scope.vc.viewState.QV_FS83_SVX63.column["delete"] = {
+element:[]
+};
+$scope.vc.viewState.QV_FS83_SVX63.column.cmdEdition = {};
+$scope.vc.viewState.QV_FS83_SVX63.column.cmdEdition.hidden = (!designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode))?false:true;
+$scope.vc.grids.QV_FS83_SVX63.columns.push(
+{
+field: 'cmdEdition',
+title: ' ',
+command: [
+{
+name: "edit"
+, text: "{{'Editar'|translate}}"
+, cssMap: "{'btn': true, 'btn-default': true, 'cb-row-image-button': true" +
+", 'k-grid-edit': !vc.viewState.G_FRMCREACET_875568.disabled}"
+, template: "<a ng-class='vc.getCssClass(\"edit\", " +
+"vc.viewState.QV_FS83_SVX63.column.edit.element[dataItem.uid].style, #:cssMap#, vc.viewState.QV_FS83_SVX63.column.edit.element[dataItem.dsgnrId].style)' " +
+"title=\"{{'Editar'|translate}}\" "+
+"ng-disabled = (vc.viewState.G_FRMCREACET_875568.disabled==true?true:false) "
++
+"href='\\#'>"
++
+"<span class='fa fa-pencil'></span>" +
+"</a>"
+}
+,
+{
+name: "destroy"
+, text: "{{'Eliminar'|translate}}"
+, cssMap: "{'btn': true, 'btn-default': true, 'cb-row-image-button': true" +
+", 'k-grid-delete': !vc.viewState.G_FRMCREACET_875568.disabled}"
+, template: "<a ng-class='vc.getCssClass(\"destroy\", " +
+"vc.viewState.QV_FS83_SVX63.column.delete.element[dataItem.uid].style, #:cssMap#, vc.viewState.QV_FS83_SVX63.column.delete.element[dataItem.dsgnrId].style)' " +
+"title=\"{{'Eliminar'|translate}}\" "+
+"ng-disabled = (vc.viewState.G_FRMCREACET_875568.disabled==true?true:false) "
++
+">"
++
+"<span class='fa fa-times'></span>" +
+"</a>"
+}
+]
+, attributes: {
+"class": "btn-toolbar"
+},
+hidden: designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode) === true ? true : $scope.vc.viewState.QV_FS83_SVX63.column.cmdEdition.hidden,
+width: Number(sessionStorage.columnSize) || 100
+}
+);
+$scope.vc.viewState.QV_FS83_SVX63.toolbar = {
+create: { visible : !designer.enums.hasFlag(designer.constants.mode.Query, $scope.vc.mode) }
+}
+$scope.vc.grids.QV_FS83_SVX63.toolbar = [
+{
+"name": "create",
+"text": "",
+"template": "<button class = 'btn btn-default k-grid-add cb-grid-button' " +
+"ng-if = 'vc.viewState.QV_FS83_SVX63.toolbar.create.visible' " +
+"ng-disabled = 'vc.viewState.G_FRMCREACET_875568.disabled?true:false'" +
+"title = \"{{'New'|translate}}\" >" +
+"<span class='fa fa-plus'></span>{{'New'|translate}}</button>"
+}
+];
+//ViewState - Group: Group2355
+$scope.vc.createViewState({
+id: "G_FRMCREARTR_336568"
+,hasId: true
+,componentStyle: []
+,label: 'Group2355'
 ,enabled: designer.constants.mode.All
 ,visible: designer.constants.mode.All
 });
-//ViewState - Entity: Cliente, Attribute: nombre
 $scope.vc.createViewState({
-id: "VA_NOMBREICEKRENNY_183568"
+id: "VA_VASIMPLELABELLL_489568"
 ,componentStyle: []
-,label: "Nombre"
-,validationCode: 32
-,readOnly: designer.constants.mode.Query
-,enabled: designer.constants.mode.All
-,visible: designer.constants.mode.All
-});
-//ViewState - Entity: Cliente, Attribute: apellido
-$scope.vc.createViewState({
-id: "VA_APELLIDOEFMBJYV_932568"
-,componentStyle: []
-,label: "Apellido"
-,validationCode: 32
-,readOnly: designer.constants.mode.Query
-,enabled: designer.constants.mode.All
-,visible: designer.constants.mode.All
-});
-//ViewState - Entity: Cliente, Attribute: codigoCliente
-$scope.vc.createViewState({
-id: "VA_CODIGOCLIENTEEE_498568"
-,componentStyle: []
-,label: "Codigo del cliente"
-,validationCode: 32
-,readOnly: designer.constants.mode.Query
-,enabled: designer.constants.mode.All
+,label: "CREAR CUENTA"
+,validationCode: 0
+,readOnly: designer.constants.mode.None
+,enabled: designer.constants.mode.None
 ,visible: designer.constants.mode.All
 });
 //ViewState - Command: Accept
@@ -245,6 +706,14 @@ $scope.vc.createViewState({
 id: "T_CNTASTHKYYPOH_380_CANCEL"
 ,componentStyle: []
 ,label: 'Cancel'
+,enabled: designer.constants.mode.All
+,visible: designer.constants.mode.All
+});
+//ViewState - Command: Command1
+$scope.vc.createViewState({
+id: "CM_TCNTASTH_5T6"
+,componentStyle: []
+,label: "Guardar"
 ,enabled: designer.constants.mode.All
 ,visible: designer.constants.mode.All
 });

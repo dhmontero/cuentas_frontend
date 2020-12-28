@@ -1,2 +1,18 @@
 [
+	{
+		"attributeName": "",
+		"controlId": "Q_CLIETNEE_OB83",
+		"controlName": "ClienteQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../../CNTAS/ADMIN/queries/Q_CLIETNEE_OB83.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Cliente",
+		"eventsType": "queryEventType"
+	}
 ]

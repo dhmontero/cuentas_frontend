@@ -8,13 +8,22 @@
 			}
 		},
 		"Queries": {
+			"Q_CLIETNEE_OB83": {
+				"name": "ClienteQuery"
+			}
 		},
 		"SubForms": {
 		}
 	},
 	"Entities": {
+		"EN_2DWTFTYSE_998": {
+			"name": "Cuenta"
+		},
 		"EN_CLIENTENW_161": {
 			"name": "Cliente"
+		},
+		"EN_FILTROCAD_498": {
+			"name": "FiltroCedula"
 		}
 	}
 }

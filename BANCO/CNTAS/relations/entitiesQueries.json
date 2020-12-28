@@ -1,2 +1,9 @@
 {
+	"EN_CLIENTENW_161": {
+		"queries": {
+			"Q_CLIETNEE_OB83": {
+				"$ref": "../ADMIN/queries/Q_CLIETNEE_OB83.json#"
+			}
+		}
+	}
 }
