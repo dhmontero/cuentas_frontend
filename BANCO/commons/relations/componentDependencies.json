@@ -1,0 +1,43 @@
+{
+	"CompositeForms": {
+	},
+	"Entities": {
+		"EN_CLIENTENW_161": {
+			"labels": [
+			]
+		}
+	},
+	"Forms": {
+		"T_CNTASTHKYYPOH_380": {
+			"blis": [
+			],
+			"entities": {
+				"EN_CLIENTENW_161": [
+					"AT35_APELLIDO161",
+					"AT44_NOMBRENN161",
+					"AT76_CODIGOCE161",
+					"AT92_CEDULACT161"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_APELLIDOO_96250",
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_CEDULAXHP_77776",
+				"LBL_CNTAS_CODIGODNI_86431",
+				"LBL_CNTAS_NOMBREJWD_94932"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		}
+	},
+	"Queries": {
+	}
+}

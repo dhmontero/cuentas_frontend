@@ -1,0 +1,20 @@
+{
+	"ADMIN": {
+		"CompositeForms": {
+		},
+		"Forms": {
+			"T_CNTASTHKYYPOH_380": {
+				"name": "frmCrearCuenta"
+			}
+		},
+		"Queries": {
+		},
+		"SubForms": {
+		}
+	},
+	"Entities": {
+		"EN_CLIENTENW_161": {
+			"name": "Cliente"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"CNTAS": {
+		"LBL": {
+			"LBL_CNTAS_APELLIDOO_96250": "Apellido",
+			"LBL_CNTAS_BUSCARKNX_70109": "BUSCAR",
+			"LBL_CNTAS_BUSCARUYH_74684": "Buscar",
+			"LBL_CNTAS_CEDULAXHP_77776": "Cedula",
+			"LBL_CNTAS_CODIGODNI_86431": "Codigo del cliente",
+			"LBL_CNTAS_NOMBREJWD_94932": "Nombre"
+		},
+		"MSG": {
+		}
+	}
+}
