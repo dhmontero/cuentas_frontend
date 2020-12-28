@@ -1,17 +1,11 @@
 {
 	"customEvents": [
 		{
-			"customEventId": "CEQY_130_Q_CLIETNEE_OB83_409",
+			"customEventId": "CEQY_130_Q_CLIETNEE_OB83_743",
 			"customizationLayer": 0,
 			"customizationLayerDescription": "ECU",
 			"enabled": "T",
 			"eventActions": [
-				{
-					"actionArgs": [
-					],
-					"actionId": "BLI4929_bli_cons_cliente",
-					"actionType": "BLI"
-				},
 				{
 					"actionArgs": [
 					],

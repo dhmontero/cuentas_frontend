@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+TFS-BuildDate: 2020-09-03 05:18:31
+Bundle-SymbolicName: com.cobiscorp.cobis-cntas.tallerbanco.services-1.
+ 0.0
+Bundle-Name: com.cobiscorp.cobis-cntas.tallerbanco.services
+Bundle-Version: 1.0.0
+Bundle-ManifestVersion: 2
+Bundle-Vendor: COBISCORP
+TFS-RepositoryName: https://tfs.cobiscorp.com/tfs/DefaultCollection/CO
+ B/_git/DSG branch:refs/heads/ActualizacionLib7.1
+Import-Package: com.cobiscorp.designer.api,com.cobiscorp.designer.api.
+ builder,com.cobiscorp.designer.api.customization,com.cobiscorp.design
+ er.api.managers,javax.ws.rs
+Service-Component: OSGI-INF/serviceComponents.xml
+Tool: Bundlor 1.0.0.RELEASE
+TFS-ChangeSet: 67366d0d3d8006b43e8d6c7740165dc0115f6584
+

@@ -18,7 +18,6 @@
 	"Forms": {
 		"T_CNTASTHKYYPOH_380": {
 			"blis": [
-				"BLI4929_bli_cons_cliente"
 			],
 			"entities": {
 				"EN_2DWTFTYSE_998": [
@@ -51,6 +50,10 @@
 			],
 			"queries": {
 				"Q_CLIETNEE_OB83": [
+					"",
+					"",
+					"",
+					"",
 					"QM_CLIET38E8B874_01",
 					"QM_CLIET3NB8E302_04",
 					"QM_CLIET3OE8N328_03",

@@ -1,6 +1,14 @@
 {
 	"databaseType": "Sybase",
 	"inputEntity": [
+		{
+			"entityId": "EN_FILTROCAD_498",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "FiltroCedula"
+		}
 	],
 	"inputParameters": [
 		{
@@ -24,6 +32,17 @@
 			"name": "@t_trn",
 			"type": "CONSTANT",
 			"value": "25160"
+		},
+		{
+			"attributeId": "AT12_CEDULAZI498",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_FILTROCAD_498",
+			"format": "",
+			"name": "@i_cedula",
+			"type": "ATTRIBUTE",
+			"value": ""
 		}
 	],
 	"name": "BLI_cons_cliente",

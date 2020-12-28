@@ -117,7 +117,7 @@
 					"{4}",
 					"{5}"
 				],
-				"editMode": true,
+				"editMode": false,
 				"queryText": "SELECT \tcl_id,\r\n\t   \t\t\tcl_nombre,\r\n\t   \t\t\tcl_apellido,\r\n\t   \t\t\tcl_telefono,\r\n\t   \t\t\tcl_cedula,\r\n\t   \t\t\tpa_nacionalidad\r\n\t   \t\t\tFROM"
 			},
 			{
@@ -128,7 +128,7 @@
 					"apellido",
 					"cedula"
 				],
-				"editMode": true,
+				"editMode": false,
 				"queryText": "SELECT"
 			}
 		],

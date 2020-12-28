@@ -1,21 +1,26 @@
 {
-    "CNTAS": [
-        {
-            "entities": {
-                "inputEntity": [
-                ],
-                "outputEntity": [
-                ],
-                "returnEntity": [
-                    {
-                        "entityId": "EN_CLIENTENW_161",
-                        "moduleId": "CNTAS",
-                        "related": false
-                    }
-                ]
-            },
-            "idBli": "BLI4929_bli_cons_cliente",
-            "nameBli": "BLI_cons_cliente"
-        }
-    ]
+	"CNTAS": [
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_FILTROCAD_498",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_CLIENTENW_161",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI4929_bli_cons_cliente",
+			"nameBli": "BLI_cons_cliente"
+		}
+	]
 }

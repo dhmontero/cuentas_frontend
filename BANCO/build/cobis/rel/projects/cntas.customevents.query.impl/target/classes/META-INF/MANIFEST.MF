@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+TFS-BuildDate: 2020-09-03 05:18:31
+Bundle-SymbolicName: com.cobiscorp.cobis-cntas.customevents.query.impl
+ -1.0.0
+Bundle-ManifestVersion: 2
+Bundle-Vendor: COBISCORP
+TFS-RepositoryName: https://tfs.cobiscorp.com/tfs/DefaultCollection/CO
+ B/_git/DSG branch:refs/heads/ActualizacionLib7.1
+Import-Package: com.cobiscorp.cobis.commons.domains.log,com.cobiscorp.
+ cobis.commons.log,com.cobiscorp.designer.api,com.cobiscorp.designer.a
+ pi.customization,com.cobiscorp.designer.api.customization.arguments,c
+ om.cobiscorp.designer.api.managers,com.cobiscorp.designer.common
+Service-Component: OSGI-INF/serviceComponents.xml
+Tool: Bundlor 1.0.0.RELEASE
+TFS-ChangeSet: 67366d0d3d8006b43e8d6c7740165dc0115f6584
+Export-Package: com.cobiscorp.cobis.cntas.customevents.impl.query.exec
+ utequery;version="1.0.0";uses:="com.cobiscorp.designer.api,com.cobisc
+ orp.designer.api.customization,com.cobiscorp.designer.api.customizati
+ on.arguments"
+Bundle-Name: com.cobiscorp.cobis-cntas.customevents.query.impl
+Bundle-Version: 1.0.0
+
