@@ -1,6 +1,6 @@
 /*
  * Archivo: T_CNTASTHKYYPOH_380.java
- * Fecha: 2020-12-28T18:17:09Z
+ * Fecha: 2020-12-28T22:10:56Z
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier
@@ -60,13 +60,13 @@ import com.cobiscorp.designer.api.managers.EventManager;
 	cardinality = ReferenceCardinality.OPTIONAL_MULTIPLE, 
 	policy=ReferencePolicy.DYNAMIC,
 	target="(&(view.id=VW_FRMCREAREU_568)(view.version=1.0.0))")
-,@Reference (name="QV_FS83_SVX63",
+,@Reference (name="QV_US83_NKI70",
 	referenceInterface=QueryViewEventBuilder.class,
 	bind="addQueyViewEventBuilder",
 	unbind="removeQueyViewEventBuilder",
 	cardinality = ReferenceCardinality.OPTIONAL_MULTIPLE, 
 	policy=ReferencePolicy.DYNAMIC,
-	target="(queryView.id=QV_FS83_SVX63)")
+	target="(queryView.id=QV_US83_NKI70)")
 ,@Reference(name="Q_CLIETNEE_OB83",
     referenceInterface = QueryEventBuilder.class,
     bind = "addQueryEventBuilder", 

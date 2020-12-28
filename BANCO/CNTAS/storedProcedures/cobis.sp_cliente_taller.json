@@ -129,7 +129,7 @@
 					"cedula"
 				],
 				"editMode": false,
-				"queryText": "SELECT"
+				"queryText": "SELECT \tcl_id,\r\n\t   \t\t\tcl_nombre,\r\n\t   \t\t\tcl_apellido,\r\n\t     \t\t\tcl_cedula,\r\n\t     \t\t\tFROM"
 			}
 		],
 		"variables": [

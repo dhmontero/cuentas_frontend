@@ -1,14 +1,6 @@
 {
 	"databaseType": "Sybase",
 	"inputEntity": [
-		{
-			"entityId": "EN_FILTROCAD_498",
-			"module": {
-				"moduleId": "CNTAS",
-				"moduleName": "CUENTAS"
-			},
-			"name": "FiltroCedula"
-		}
 	],
 	"inputParameters": [
 		{
@@ -38,11 +30,11 @@
 			"bddType": "varchar",
 			"dataType": "VARCHAR",
 			"direction": "in",
-			"entityId": "EN_FILTROCAD_498",
+			"entityId": "",
 			"format": "",
 			"name": "@i_cedula",
-			"type": "ATTRIBUTE",
-			"value": ""
+			"type": "CUSTOM",
+			"value": "cedula"
 		}
 	],
 	"name": "BLI_cons_cliente",
@@ -60,7 +52,7 @@
 			"isReturn": true,
 			"isSingleResult": false,
 			"numberQuery": 2,
-			"queryName": "SELECT"
+			"queryName": "SELECT \tcl_id,\r\n\t   \t\t\tcl_nombre,\r\n\t   \t\t\tcl_apellido,\r\n\t     \t\t\tcl_cedula,\r\n\t     \t\t\tFROM"
 		}
 	],
 	"resultSets": [

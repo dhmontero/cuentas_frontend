@@ -14,19 +14,5 @@
 		],
 		"entityName": "Cliente",
 		"eventsType": "queryEventType"
-	},
-	{
-		"attributeName": "",
-		"controlId": "VA_VABUTTONGUDQHVD_413568",
-		"controlName": "",
-		"controlType": "Button",
-		"customEvents": [
-			{
-				"eventName": "executeCommand",
-				"executionType": 3
-			}
-		],
-		"entityName": "FiltroCedula",
-		"eventsType": "visualAttributeEventType"
 	}
 ]

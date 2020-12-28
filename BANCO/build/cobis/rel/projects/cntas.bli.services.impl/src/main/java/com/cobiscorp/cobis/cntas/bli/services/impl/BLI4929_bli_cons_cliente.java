@@ -14,7 +14,6 @@ import com.cobiscorp.cobis.cwc.context.MapperManager;
 import com.cobiscorp.cobis.cwc.kernel.sp.dto.MapperResult;
 import com.cobiscorp.cobis.cwc.kernel.sp.impl.ExecutorSP;
 
-import com.cobiscorp.cobis.cntas.model.FiltroCedula;
 import com.cobiscorp.cobis.cntas.model.Cliente;
 
 import com.cobiscorp.designer.api.DataEntity;
@@ -45,28 +44,17 @@ public class BLI4929_bli_cons_cliente implements IBLIExecutor {
     try {
       DataEntity row = BLIUtils.getRowDataEntity(dynamicRequest);
       List<Object> outListEntities = new ArrayList<Object>();
-      DataEntity rowFiltroCedula;
-      if (row != null && FiltroCedula.ENTITY_NAME.equals(row.getEntityName())) {
-        rowFiltroCedula = row;
-      } else {
-        rowFiltroCedula = BLIUtils.getDataEntity(dynamicRequest, FiltroCedula.ENTITY_NAME);
-        if (rowFiltroCedula == null) {
-          throw new DesignerRuntimeException("No existe entidad " + FiltroCedula.ENTITY_NAME);
-        }
-      }
 
-      String wcedula = rowFiltroCedula.get(FiltroCedula.CEDULA);
 
       if (logger.isDebugEnabled()) {
-        logger.logDebug("inputParameters: " + " CEDULA: " + wcedula);
+        logger.logDebug("inputParameters: ");
       }
 
       mapper = MapperManager.get(Mapper.class);
       mapper.addInputParameter("@i_operacion", SqlType.CHAR, "S");
       mapper.addInputParameter("@t_trn", SqlType.INT, "25160");
-
-      if (wcedula != null){
-        mapper.addInputParameter("@i_cedula", SqlType.VARCHAR, BLIUtils.convertToType(wcedula, String.class));
+      if (dynamicRequest.getData().get("cedula") != null){
+        mapper.addInputParameter("@i_cedula", SqlType.VARCHAR, BLIUtils.convertToType(dynamicRequest.getData().get("cedula"), String.class));
       }
       ExecutorSP executorSP = new ExecutorSP(mapper);
       MapperResult mapperSp1 = new MapperResult();

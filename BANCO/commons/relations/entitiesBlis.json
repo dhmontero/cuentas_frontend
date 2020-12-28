@@ -3,11 +3,6 @@
 		{
 			"entities": {
 				"inputEntity": [
-					{
-						"entityId": "EN_FILTROCAD_498",
-						"moduleId": "CNTAS",
-						"related": false
-					}
 				],
 				"outputEntity": [
 				],

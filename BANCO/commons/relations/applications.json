@@ -5,10 +5,12 @@
 		"forms": {
 			"CNTAS": [
 				{
-					"generated": 0,
+					"generated": 4,
 					"moduleId": "CNTAS",
+					"moduleName": "CUENTAS",
 					"name": "frmCrearCuenta",
 					"subModuleId": "ADMIN",
+					"subModuleName": "ADMIN",
 					"taskId": "T_CNTASTHKYYPOH_380",
 					"type": "Simple form"
 				}
