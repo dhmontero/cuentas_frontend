@@ -25,6 +25,23 @@
 		{
 			"entities": {
 				"inputEntity": [
+					{
+						"entityId": "EN_TRANSACIO_762",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7155_bli_retiro",
+			"nameBli": "BLI_retiro"
+		},
+		{
+			"entities": {
+				"inputEntity": [
 				],
 				"outputEntity": [
 				],

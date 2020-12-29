@@ -9,8 +9,14 @@
 			"T_CNTASHIHYVHIB_835": {
 				"name": "formModalDeposito"
 			},
+			"T_CNTASPBYTFFCI_439": {
+				"name": "formRetiro"
+			},
 			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
+			},
+			"T_CNTASYCTEUZKY_209": {
+				"name": "formModalRetiro"
 			}
 		},
 		"Queries": {

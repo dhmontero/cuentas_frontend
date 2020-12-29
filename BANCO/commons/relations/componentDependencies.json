@@ -94,6 +94,48 @@
 			"subForms": [
 			]
 		},
+		"T_CNTASPBYTFFCI_439": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT95_BANCOSHW998"
+				],
+				"EN_FILTRONNE_177": [
+					"AT20_NOMBREFQ177",
+					"AT21_APELLIDD177",
+					"AT23_NROCUETA177",
+					"AT34_SALDOZWR177",
+					"AT67_CEDULASU177",
+					"AT70_TIPOCUAA177"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_NROCUENAA_62702",
+				"LBL_CNTAS_RETIROHKU_46810"
+			],
+			"queries": {
+				"Q_FILTNORC_VL65": [
+					"",
+					"",
+					"QM_FILTN555RV250_04",
+					"QM_FILTN556OO870_02",
+					"QM_FILTN6VCO6869_01",
+					"QM_FILTNL5OC5557_06",
+					"QM_FILTNLORC6705_03",
+					"QM_FILTNVOV56922_05"
+				]
+			},
+			"subForms": [
+			]
+		},
 		"T_CNTASTHKYYPOH_380": {
 			"blis": [
 			],
@@ -137,6 +179,32 @@
 					"QM_CLIET3OE8N328_03",
 					"QM_CLIETE3BNO825_02"
 				]
+			},
+			"subForms": [
+			]
+		},
+		"T_CNTASYCTEUZKY_209": {
+			"blis": [
+				"BLI7155_bli_retiro"
+			],
+			"entities": {
+				"EN_FILTRONNE_177": [
+				],
+				"EN_TRANSACIO_762": [
+					"AT12_VALORMBP762"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_ACEPTARFK_30930",
+				"LBL_CNTAS_VALORARRT_73599"
+			],
+			"queries": {
 			},
 			"subForms": [
 			]

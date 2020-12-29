@@ -18,10 +18,13 @@
 			"LBL_CNTAS_NROCUENTT_50349": "Nro Cuenta",
 			"LBL_CNTAS_NROTLAFHS_23315": "Nro",
 			"LBL_CNTAS_NUEVODEII_38068": "Nuevo Deposito",
+			"LBL_CNTAS_RETIROCQN_53542": "Retiro",
+			"LBL_CNTAS_RETIROHKU_46810": "Formulario de Retiro",
 			"LBL_CNTAS_SALDONBGU_29941": "Saldo",
 			"LBL_CNTAS_TIPOCUETA_93397": "Tipo Cuenta",
 			"LBL_CNTAS_TIPOCUETN_40738": "Tipo de Cuenta",
-			"LBL_CNTAS_VALORADTR_66829": "Valor a Depositar"
+			"LBL_CNTAS_VALORADTR_66829": "Valor a Depositar",
+			"LBL_CNTAS_VALORARRT_73599": "Valor a Retirar"
 		},
 		"MSG": {
 		}

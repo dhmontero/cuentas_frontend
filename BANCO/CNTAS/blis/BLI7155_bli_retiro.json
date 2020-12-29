@@ -1,0 +1,88 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_TRANSACIO_762",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "Transaccion"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "R"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "706714"
+		},
+		{
+			"attributeId": "AT70_NROCUERT762",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_TRANSACIO_762",
+			"format": "",
+			"name": "@i_nro_cuenta_O",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT35_TIPOCUNA762",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_TRANSACIO_762",
+			"format": "",
+			"name": "@i_t_cuenta",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT12_VALORMBP762",
+			"bddType": "decimal",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_TRANSACIO_762",
+			"format": "",
+			"name": "@i_valor",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_retiro",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI7155_bli_retiro",
+	"patternName": "BLI_retiro",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.g3_sp_operaciones",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

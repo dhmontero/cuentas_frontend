@@ -13,15 +13,15 @@
 	"id": {
 		"moduleId": "CNTAS",
 		"subModuleId": "ADMIN",
-		"taskId": "T_CNTASBSSWDNRB_992",
+		"taskId": "T_CNTASPBYTFFCI_439",
 		"version": "1.0.0"
 	},
 	"isCustomized": false,
 	"isImported": false,
-	"mainViewContainerId": "VC_DEPOSITOUE_344992",
+	"mainViewContainerId": "VC_RETIROXUKF_194439",
 	"modeEnabled": 4095,
 	"name": {
-		"$ref": "../../../../CNTAS/relations/componentKeys.json#/ADMIN/Forms/T_CNTASBSSWDNRB_992/name"
+		"$ref": "../../../../CNTAS/relations/componentKeys.json#/ADMIN/Forms/T_CNTASPBYTFFCI_439/name"
 	},
 	"setFocus": false,
 	"tempSaveStr": "F",
@@ -34,7 +34,7 @@
 			"componentStyle": null,
 			"customEvents": [
 				{
-					"customEventId": "CEVC_008T_CNTASBSSWDNRB_992_591",
+					"customEventId": "CEVC_008T_CNTASPBYTFFCI_439_695",
 					"customizationLayer": 0,
 					"customizationLayerDescription": "ECU",
 					"enabled": "T",
@@ -57,13 +57,13 @@
 			"id": {
 				"moduleId": "CNTAS",
 				"subModuleId": "ADMIN",
-				"taskId": "T_CNTASBSSWDNRB_992",
+				"taskId": "T_CNTASPBYTFFCI_439",
 				"taskVersion": "1.0.0",
-				"viewContainerId": "VC_DEPOSITOUE_344992"
+				"viewContainerId": "VC_RETIROXUKF_194439"
 			},
 			"isCustomized": false,
 			"layoutType": "Group",
-			"name": "formDeposito",
+			"name": "formRetiro",
 			"options": 0,
 			"responsiveLayouts": null,
 			"responsivity": false,
@@ -73,21 +73,163 @@
 					{
 						"collapsedStr": "F",
 						"colSpan": 1,
-						"columnsNum": 1,
 						"componentStyle": null,
 						"customEvents": [
 						],
 						"enabled": 4095,
+						"eventType": 0,
+						"groupId": "G_RETIRODHFX_170283",
+						"groups": [
+							{
+								"collapsedStr": "F",
+								"colSpan": 1,
+								"columnsNum": 3,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"enabled": 4095,
+								"entity": {
+									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#"
+								},
+								"eventType": 0,
+								"groupId": "G_RETIROQYDE_387283",
+								"htmlSection": "F",
+								"independentValidation": "F",
+								"isCustomized": false,
+								"layoutType": "Group",
+								"name": "Group1858",
+								"order": 1,
+								"orientation": "V",
+								"parentLayoutType": "AccordionLayout",
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"style": null,
+								"titleLabel": {
+									"defaultValue": {
+										"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_RETIROHKU_46810"
+									},
+									"labelId": "LBL_CNTAS_RETIROHKU_46810",
+									"moduleId": "CNTAS"
+								},
+								"visible": 4095,
+								"visualAttributes": [
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attribute": {
+											"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT95_BANCOSHW998"
+										},
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"format": "",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_NROCUENAA_62702"
+											},
+											"labelId": "LBL_CNTAS_NROCUENAA_62702",
+											"moduleId": "CNTAS"
+										},
+										"maxRecords": null,
+										"name": "banco",
+										"options": 0,
+										"order": 1,
+										"readOnly": 8,
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"textRows": 0,
+										"userControl": {
+											"type": "I",
+											"userControlId": "TextInputBox"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_BANCOLXAQIFORJF_646283",
+										"width": null,
+										"widthComposite": "D"
+									},
+									{
+										"aggregate": null,
+										"aggregateId": null,
+										"attributeValidations": [
+										],
+										"colSpan": 1,
+										"componentInGrid": false,
+										"componentStyle": null,
+										"customEvents": [
+										],
+										"customizationLayer": 0,
+										"customizationLayerDescription": "ECU",
+										"enabled": 4095,
+										"entityQuery": "EN_FILTRONNE_177",
+										"imageId": "fa fa-search",
+										"include": 4095,
+										"isCustomized": false,
+										"label": {
+											"defaultValue": {
+												"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_BUSCARUYH_74684"
+											},
+											"labelId": "LBL_CNTAS_BUSCARUYH_74684",
+											"moduleId": "CNTAS"
+										},
+										"maxRecords": null,
+										"name": "VA_VABUTTONTXREIFB_807283",
+										"options": 0,
+										"order": 2,
+										"queryId": "Q_FILTNORC_VL65",
+										"queryModule": "CNTAS",
+										"queryVersion": "1.0.0",
+										"responsiveLayouts": null,
+										"responsivity": false,
+										"sizeWidthComposite": null,
+										"style": null,
+										"userControl": {
+											"type": "A",
+											"userControlId": "Button"
+										},
+										"visible": 4095,
+										"visualAttributeId": "VA_VABUTTONTXREIFB_807283",
+										"width": null,
+										"widthComposite": "D"
+									}
+								]
+							}
+						],
+						"isCustomized": false,
+						"layoutType": "AccordionLayout",
+						"name": "AccordionLayout1330",
+						"order": 1,
+						"style": null,
+						"visible": 4095
+					},
+					{
+						"collapsedStr": "F",
+						"colSpan": 1,
+						"columnsNum": 1,
+						"componentStyle": null,
+						"customEvents": [
+						],
+						"enabled": 8,
 						"entity": {
 							"$ref": "../../../../CNTAS/entities/EN_FILTRONNE_177.json#"
 						},
 						"eventType": 0,
-						"groupId": "G_DEPOSITOOO_279722",
+						"groupId": "G_RETIROZOZY_551283",
 						"htmlSection": "F",
 						"independentValidation": "F",
 						"isCustomized": false,
 						"layoutType": "Group",
-						"name": "Group1498",
+						"name": "Group2324",
 						"order": 2,
 						"orientation": "V",
 						"queryView": {
@@ -110,7 +252,7 @@
 							"customUrlDialog": null,
 							"deleteCommandEnabled": false,
 							"deleteCommandEnabledStr": "F",
-							"dialogTitleLabelId": "LBL_CNTAS_DEPOSITAR_50109",
+							"dialogTitleLabelId": "LBL_CNTAS_RETIROCQN_53542",
 							"editCommandEnabled": true,
 							"editCommandEnabledStr": "T",
 							"editMode": "3",
@@ -121,12 +263,12 @@
 							"hasDetailString": "F",
 							"height": null,
 							"includeQueryMembers": [
-								"AT20_NOMBREFQ177",
-								"AT34_SALDOZWR177",
 								"AT23_NROCUETA177",
-								"AT70_TIPOCUAA177",
 								"AT67_CEDULASU177",
-								"AT21_APELLIDD177"
+								"AT20_NOMBREFQ177",
+								"AT21_APELLIDD177",
+								"AT70_TIPOCUAA177",
+								"AT34_SALDOZWR177"
 							],
 							"insertCommandEnabled": false,
 							"insertCommandEnabledStr": "F",
@@ -135,7 +277,7 @@
 							"modeSelection": "None",
 							"moduleIdDialog": "CNTAS",
 							"multiSelectEnabledStr": "F",
-							"name": "QV_SK65_QXD37",
+							"name": "QV_NX65_PWF93",
 							"options": 0,
 							"pageSize": null,
 							"query": {
@@ -145,12 +287,12 @@
 							"queryVersion": "1.0.0",
 							"queryViewCustomActions": [
 							],
-							"queryViewId": "QV_SK65_QXD37",
+							"queryViewId": "QV_NX65_PWF93",
 							"queryViewType": "Grid",
 							"rowCommandAppearance": 0,
 							"style": null,
 							"subModuleIdDialog": "ADMIN",
-							"taskIdDialog": "T_CNTASHIHYVHIB_835",
+							"taskIdDialog": "T_CNTASYCTEUZKY_209",
 							"taskVersionDialog": "1.0.0",
 							"typeFormDialog": "forms",
 							"userControl": {
@@ -161,88 +303,14 @@
 								"type": "I",
 								"userControlId": "Grid"
 							},
-							"viewContainerIdDialog": "VC_MODALDEPOO_977835"
+							"viewContainerIdDialog": "VC_MODALRETII_428209"
 						},
-						"queryViewId": "QV_SK65_QXD37",
+						"queryViewId": "QV_NX65_PWF93",
 						"responsiveLayouts": null,
 						"responsivity": false,
 						"style": null,
-						"visible": 4095,
+						"visible": 11,
 						"visualAttributes": [
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"attribute": {
-									"$ref": "../../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT67_CEDULASU177"
-								},
-								"attributeValidations": [
-								],
-								"colSpan": 1,
-								"componentInGrid": true,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"enabled": 4095,
-								"include": 4095,
-								"isCustomized": false,
-								"maxRecords": null,
-								"name": "cedula",
-								"options": 0,
-								"order": 3,
-								"readOnly": 8,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"textRows": 0,
-								"userControl": {
-									"type": "I",
-									"userControlId": "TextInputBox"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXCFC_985722",
-								"width": null,
-								"widthComposite": "D"
-							},
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"attribute": {
-									"$ref": "../../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT34_SALDOZWR177"
-								},
-								"attributeValidations": [
-								],
-								"colSpan": 1,
-								"componentInGrid": true,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"enabled": 4095,
-								"include": 4095,
-								"isCustomized": false,
-								"maxRecords": null,
-								"name": "saldo",
-								"options": 0,
-								"order": 2,
-								"readOnly": 8,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"textRows": 0,
-								"userControl": {
-									"type": "I",
-									"userControlId": "TextInputBox"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXFOU_516722",
-								"width": null,
-								"widthComposite": "D"
-							},
 							{
 								"aggregate": null,
 								"aggregateId": null,
@@ -264,7 +332,7 @@
 								"maxRecords": null,
 								"name": "tipoCuenta",
 								"options": 0,
-								"order": 6,
+								"order": 5,
 								"readOnly": 8,
 								"responsiveLayouts": null,
 								"responsivity": false,
@@ -276,7 +344,7 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXKIO_144722",
+								"visualAttributeId": "VA_COMBOBOXVFFZCAZ_309283",
 								"width": null,
 								"widthComposite": "D"
 							},
@@ -301,7 +369,7 @@
 								"maxRecords": null,
 								"name": "apellido",
 								"options": 0,
-								"order": 5,
+								"order": 4,
 								"readOnly": 8,
 								"responsiveLayouts": null,
 								"responsivity": false,
@@ -313,7 +381,7 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXKPC_868722",
+								"visualAttributeId": "VA_TEXTINPUTBOXAZG_893283",
 								"width": null,
 								"widthComposite": "D"
 							},
@@ -338,7 +406,7 @@
 								"maxRecords": null,
 								"name": "nombre",
 								"options": 0,
-								"order": 4,
+								"order": 3,
 								"readOnly": 8,
 								"responsiveLayouts": null,
 								"responsivity": false,
@@ -350,7 +418,81 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXLGI_795722",
+								"visualAttributeId": "VA_TEXTINPUTBOXCXV_102283",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT34_SALDOZWR177"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "saldo",
+								"options": 0,
+								"order": 6,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXDUP_680283",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT67_CEDULASU177"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "cedula",
+								"options": 0,
+								"order": 2,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXMGK_406283",
 								"width": null,
 								"widthComposite": "D"
 							},
@@ -387,159 +529,16 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXMCT_576722",
+								"visualAttributeId": "VA_TEXTINPUTBOXZNH_877283",
 								"width": null,
 								"widthComposite": "D"
 							}
 						]
-					},
-					{
-						"collapsedStr": "F",
-						"colSpan": 1,
-						"componentStyle": null,
-						"customEvents": [
-						],
-						"enabled": 4095,
-						"eventType": 0,
-						"groupId": "G_DEPOSITOOO_975722",
-						"groups": [
-							{
-								"collapsedStr": "F",
-								"colSpan": 1,
-								"columnsNum": 3,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"enabled": 4095,
-								"entity": {
-									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#"
-								},
-								"eventType": 0,
-								"groupId": "G_DEPOSITOOO_763722",
-								"htmlSection": "F",
-								"independentValidation": "F",
-								"isCustomized": false,
-								"layoutType": "Group",
-								"name": "Group1356",
-								"order": 1,
-								"orientation": "V",
-								"parentLayoutType": "AccordionLayout",
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"style": null,
-								"titleLabel": {
-									"defaultValue": {
-										"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_DEPOSITOO_28932"
-									},
-									"labelId": "LBL_CNTAS_DEPOSITOO_28932",
-									"moduleId": "CNTAS"
-								},
-								"visible": 4095,
-								"visualAttributes": [
-									{
-										"aggregate": null,
-										"aggregateId": null,
-										"attribute": {
-											"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT95_BANCOSHW998"
-										},
-										"attributeValidations": [
-										],
-										"colSpan": 1,
-										"componentInGrid": false,
-										"componentStyle": null,
-										"customEvents": [
-										],
-										"customizationLayer": 0,
-										"customizationLayerDescription": "ECU",
-										"enabled": 4095,
-										"format": "",
-										"imageId": "",
-										"include": 4095,
-										"isCustomized": false,
-										"label": {
-											"defaultValue": {
-												"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_NROCUENAA_62702"
-											},
-											"labelId": "LBL_CNTAS_NROCUENAA_62702",
-											"moduleId": "CNTAS"
-										},
-										"maxRecords": null,
-										"name": "banco",
-										"options": 0,
-										"order": 1,
-										"readOnly": 8,
-										"responsiveLayouts": null,
-										"responsivity": false,
-										"sizeWidthComposite": null,
-										"style": null,
-										"textRows": 0,
-										"userControl": {
-											"type": "I",
-											"userControlId": "TextInputBox"
-										},
-										"visible": 4095,
-										"visualAttributeId": "VA_1JYCWKULNZLGOPJ_165722",
-										"width": null,
-										"widthComposite": "D"
-									},
-									{
-										"aggregate": null,
-										"aggregateId": null,
-										"attributeValidations": [
-										],
-										"colSpan": 1,
-										"componentInGrid": false,
-										"componentStyle": null,
-										"customEvents": [
-										],
-										"customizationLayer": 0,
-										"customizationLayerDescription": "ECU",
-										"enabled": 4095,
-										"entityQuery": "EN_FILTRONNE_177",
-										"imageId": "fa fa-search",
-										"include": 4095,
-										"isCustomized": false,
-										"label": {
-											"defaultValue": {
-												"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_BUSCARUYH_74684"
-											},
-											"labelId": "LBL_CNTAS_BUSCARUYH_74684",
-											"moduleId": "CNTAS"
-										},
-										"maxRecords": null,
-										"name": "",
-										"options": 0,
-										"order": 2,
-										"queryId": "Q_FILTNORC_VL65",
-										"queryModule": "CNTAS",
-										"queryVersion": "1.0.0",
-										"responsiveLayouts": null,
-										"responsivity": false,
-										"sizeWidthComposite": null,
-										"style": null,
-										"userControl": {
-											"type": "A",
-											"userControlId": "Button"
-										},
-										"visible": 4095,
-										"visualAttributeId": "VA_VABUTTONXILZEXC_422722",
-										"width": null,
-										"widthComposite": "D"
-									}
-								]
-							}
-						],
-						"isCustomized": false,
-						"layoutType": "AccordionLayout",
-						"name": "AccordionLayout1426",
-						"order": 1,
-						"style": null,
-						"visible": 4095
 					}
 				],
 				"id": {
 					"version": "1.0.0",
-					"viewId": "VW_DEPOSITOZS_722"
+					"viewId": "VW_RETIRODBXM_283"
 				},
 				"metadataVersion": "7.2.0.2020",
 				"modules": [
@@ -547,7 +546,7 @@
 						"moduleId": "CNTAS"
 					}
 				],
-				"name": "View of formDeposito"
+				"name": "View of formRetiro"
 			}
 		}
 	]

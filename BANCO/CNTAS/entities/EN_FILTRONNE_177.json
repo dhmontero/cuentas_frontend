@@ -136,7 +136,7 @@
 			"falseValue": null,
 			"labelId": null,
 			"length": 0,
-			"listValues": "A;CUENTA AHORRO| C;CUENTA CORRIENTE",
+			"listValues": null,
 			"name": "tipoCuenta",
 			"objectType": null,
 			"order": 6,
