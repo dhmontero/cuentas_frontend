@@ -1,0 +1,121 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "R"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "706715"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cuenta",
+			"type": "CUSTOM",
+			"value": "cuenta"
+		}
+	],
+	"name": "BLI_ConsultarOrigen",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI8860_bli_consultarorigen",
+	"patternName": "BLI_ConsultarOrigen",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "65b5ea4c-c47a-4c6b-9226-589cdaf42e93",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "65b5ea4c-c47a-4c6b-9226-589cdaf42e93",
+			"columns": [
+				{
+					"attributeId": "AT95_BANCOSHW998",
+					"entityId": "EN_2DWTFTYSE_998",
+					"format": "",
+					"name": "Numero cuenta",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT61_FECHACEE998",
+					"entityId": "EN_2DWTFTYSE_998",
+					"format": "",
+					"name": " fecha creacion",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT96_FECHAMII998",
+					"entityId": "EN_2DWTFTYSE_998",
+					"format": "",
+					"name": " fecha modificacion",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT97_CLIENTEE998",
+					"entityId": "EN_2DWTFTYSE_998",
+					"format": "",
+					"name": "Id cliente",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT87_SALDOWDJ998",
+					"entityId": "EN_2DWTFTYSE_998",
+					"format": "",
+					"name": "Saldo",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_2DWTFTYSE_998",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "Cuenta"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.g3_sp_busqueda_cliente",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

@@ -1,8 +1,22 @@
 {
+	"EN_2DWTFTYSE_998": {
+		"queries": {
+			"Q_CUENAAAA_US24": {
+				"$ref": "../ADMIN/queries/Q_CUENAAAA_US24.json#"
+			}
+		}
+	},
 	"EN_CLIENTENW_161": {
 		"queries": {
 			"Q_CLIETNEE_OB83": {
 				"$ref": "../ADMIN/queries/Q_CLIETNEE_OB83.json#"
+			}
+		}
+	},
+	"EN_CUENTADSE_522": {
+		"queries": {
+			"Q_CUENITTE_VP60": {
+				"$ref": "../ADMIN/queries/Q_CUENITTE_VP60.json#"
 			}
 		}
 	}

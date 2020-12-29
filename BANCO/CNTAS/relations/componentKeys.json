@@ -3,13 +3,25 @@
 		"CompositeForms": {
 		},
 		"Forms": {
+			"T_CNTASEHKHATKR_667": {
+				"name": "formTransferencia"
+			},
 			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
+			},
+			"T_CNTASUXJTKMDW_656": {
+				"name": "formCuentaDestino"
 			}
 		},
 		"Queries": {
 			"Q_CLIETNEE_OB83": {
 				"name": "ClienteQuery"
+			},
+			"Q_CUENAAAA_US24": {
+				"name": "TransferenciaQuery"
+			},
+			"Q_CUENITTE_VP60": {
+				"name": "CuentaDestinoQuery"
 			}
 		},
 		"SubForms": {
@@ -22,8 +34,17 @@
 		"EN_CLIENTENW_161": {
 			"name": "Cliente"
 		},
+		"EN_CUENTADSE_522": {
+			"name": "CuentaDestino"
+		},
 		"EN_FILTROCAD_498": {
 			"name": "FiltroCedula"
+		},
+		"EN_FILTROCNE_587": {
+			"name": "FiltroCuenta"
+		},
+		"EN_FILTROCUE_372": {
+			"name": "FiltroCuentaDestino"
 		}
 	}
 }

@@ -1,0 +1,184 @@
+{
+	"filename": "C:\\Users\\user\\Desktop\\ClearMinds\\CMC\\Archivos_Documentos\\sps\\cobis.g3_sp_busqueda_cliente.sp",
+	"procedure": {
+		"database": "cobis",
+		"name": "g3_sp_busqueda_cliente",
+		"owner": "dbo",
+		"parameters": [
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_srv"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@s_ssn_branch"
+			},
+			{
+				"dataType": "datetime",
+				"direction": "in",
+				"name": "@s_date"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_ofi"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_user"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_lsrv"
+			},
+			{
+				"dataType": "smallint",
+				"direction": "in",
+				"name": "@s_rol"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_term"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@s_org"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@s_culture"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@t_file"
+			},
+			{
+				"dataType": "char",
+				"direction": "in",
+				"name": "@i_operacion"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@t_trn"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cuenta"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_apellido"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_telefono"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_cedula"
+			},
+			{
+				"dataType": "decimal",
+				"direction": "in",
+				"name": "@i_saldo"
+			},
+			{
+				"dataType": "varchar",
+				"direction": "in",
+				"name": "@i_nacionalidad"
+			},
+			{
+				"dataType": "int",
+				"direction": "in",
+				"name": "@i_id"
+			}
+		],
+		"queries": [
+			{
+				"_idQuery": "8b747b7e-d4a3-4f69-ae47-4513240c44bf",
+				"columns": [
+					"N\ufffdmero cuenta",
+					"Saldo",
+					"Cedula cliente",
+					"Nombre cliente",
+					"Apellido clilente",
+					"Tipo cuenta"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n    \t\t\t\u0027N\ufffdmero cuenta\u0027 = ca_banco,\r\n    \t\t\t\u0027Saldo\u0027 = ca_saldo,\r\n    \t\t\t\u0027Cedula cliente\u0027 = cl_cedula,\r\n\t   \t\t\t\u0027Nombre cliente\u0027 = cl_nombre,\r\n\t   \t\t\t\u0027Apellido clilente\u0027 = cl_apellido,\r\n\t   \t\t\t\u0027Tipo cuenta\u0027 = \u0027CUENTA AHORROS\u0027\r\n\t   \t\t\tFROM"
+			},
+			{
+				"_idQuery": "d948ea0d-b0d4-41ff-a247-4716177303fa",
+				"columns": [
+					"N\ufffdmero cuenta",
+					"Saldo",
+					"Cedula cliente",
+					"Nombre cliente",
+					"Apellido clilente",
+					"Tipo cuenta"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n    \t\t\t\u0027N\ufffdmero cuenta\u0027 = cc_banco,\r\n    \t\t\t\u0027Saldo\u0027 = cc_saldo,\r\n    \t\t\t\u0027Cedula cliente\u0027 = cl_cedula,\r\n\t   \t\t\t\u0027Nombre cliente\u0027 = cl_nombre,\r\n\t   \t\t\t\u0027Apellido clilente\u0027 = cl_apellido,\r\n\t   \t\t\t\u0027Tipo cuenta\u0027 = \u0027CUENTA CORRIENTE\u0027\r\n\t   \t\t\tFROM"
+			},
+			{
+				"_idQuery": "a4c2dba3-49c6-477d-b9b4-7e390dafe3ac",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n        \t\tTOP 1\r\n        \t\tcl_id,\r\n\t   \t\t\tcl_nombre,\r\n\t   \t\t\tcl_apellido,\r\n\t   \t\t\tcl_cedula\r\n\t   \t\t\tFROM"
+			},
+			{
+				"_idQuery": "c94aced0-c414-438b-af35-9622f9da2d9a",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n    \t\ttr_id,\r\n    \t\ttr_fecha,\r\n    \t\ttr_cuenta,\r\n    \t\ttr_tipo_tr,\r\n    \t\ttr_tipo_cuenta\r\n    \t\tFROM"
+			},
+			{
+				"_idQuery": "65b5ea4c-c47a-4c6b-9226-589cdaf42e93",
+				"columns": [
+					"Numero cuenta",
+					" fecha creacion",
+					" fecha modificacion",
+					"Id cliente",
+					"Saldo"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
+			}
+		],
+		"variables": [
+			{
+				"dataType": "varchar",
+				"name": "@w_sp_name"
+			}
+		]
+	}
+}

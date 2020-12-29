@@ -10,12 +10,64 @@
 			"labels": [
 			]
 		},
+		"EN_CUENTADSE_522": {
+			"labels": [
+			]
+		},
 		"EN_FILTROCAD_498": {
+			"labels": [
+			]
+		},
+		"EN_FILTROCNE_587": {
+			"labels": [
+			]
+		},
+		"EN_FILTROCUE_372": {
 			"labels": [
 			]
 		}
 	},
 	"Forms": {
+		"T_CNTASEHKHATKR_667": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT61_FECHACEE998",
+					"AT87_SALDOWDJ998",
+					"AT95_BANCOSHW998",
+					"AT96_FECHAMII998",
+					"AT97_CLIENTEE998"
+				],
+				"EN_FILTROCNE_587": [
+					"AT27_CUENTAGM587"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_CUENTAONI_74515",
+				"LBL_CNTAS_NOCUENTAA_90338"
+			],
+			"queries": {
+				"Q_CUENAAAA_US24": [
+					"",
+					"",
+					"QM_CUENAAAA4S466_01",
+					"QM_CUENAAAAAS921_03",
+					"QM_CUENAAAASA955_04",
+					"QM_CUENAAAS2A713_05",
+					"QM_CUENAUAAAA506_06"
+				]
+			},
+			"subForms": [
+			]
+		},
 		"T_CNTASTHKYYPOH_380": {
 			"blis": [
 			],
@@ -62,10 +114,63 @@
 			},
 			"subForms": [
 			]
+		},
+		"T_CNTASUXJTKMDW_656": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT87_SALDOWDJ998"
+				],
+				"EN_CUENTADSE_522": [
+					"AT11_CLIENTEE522",
+					"AT28_SALDOKWQ522",
+					"AT52_BANCODZN522",
+					"AT52_FECHACNC522",
+					"AT61_FECHAMAO522"
+				],
+				"EN_FILTROCUE_372": [
+					"AT84_CUENTADD372"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_CUENTADTT_17895",
+				"LBL_CNTAS_NOCUENTAA_90338",
+				"LBL_CNTAS_TARANSFRR_28094",
+				"LBL_CNTAS_VALORATRE_89141"
+			],
+			"queries": {
+				"Q_CUENITTE_VP60": [
+					"",
+					"",
+					"QM_CUENI0TTPT770_04",
+					"QM_CUENIETTT6428_05",
+					"QM_CUENIT0TTT347_02",
+					"QM_CUENITETTV383_01",
+					"QM_CUENITP0TT821_03"
+				]
+			},
+			"subForms": [
+			]
 		}
 	},
 	"Queries": {
 		"Q_CLIETNEE_OB83": {
+			"labels": [
+			]
+		},
+		"Q_CUENAAAA_US24": {
+			"labels": [
+			]
+		},
+		"Q_CUENITTE_VP60": {
 			"labels": [
 			]
 		}

@@ -1,0 +1,18 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_CUENITTE_VP60",
+		"controlName": "CuentaDestinoQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../../CNTAS/ADMIN/queries/Q_CUENITTE_VP60.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "CuentaDestino",
+		"eventsType": "queryEventType"
+	}
+]

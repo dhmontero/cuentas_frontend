@@ -5,13 +5,27 @@
 		"forms": {
 			"CNTAS": [
 				{
-					"generated": 4,
+					"generated": 0,
 					"moduleId": "CNTAS",
-					"moduleName": "CUENTAS",
+					"name": "formTransferencia",
+					"subModuleId": "ADMIN",
+					"taskId": "T_CNTASEHKHATKR_667",
+					"type": "Simple form"
+				},
+				{
+					"generated": 2,
+					"moduleId": "CNTAS",
 					"name": "frmCrearCuenta",
 					"subModuleId": "ADMIN",
-					"subModuleName": "ADMIN",
 					"taskId": "T_CNTASTHKYYPOH_380",
+					"type": "Simple form"
+				},
+				{
+					"generated": 0,
+					"moduleId": "CNTAS",
+					"name": "formCuentaDestino",
+					"subModuleId": "ADMIN",
+					"taskId": "T_CNTASUXJTKMDW_656",
 					"type": "Simple form"
 				}
 			]

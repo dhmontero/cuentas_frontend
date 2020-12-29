@@ -1,0 +1,30 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_2DWTFTYSE_998",
+			"isContextEntity": null,
+			"moduleId": "CNTAS",
+			"related": false
+		},
+		{
+			"entityId": "EN_CUENTADSE_522",
+			"isContextEntity": null,
+			"moduleId": "CNTAS",
+			"related": false
+		},
+		{
+			"entityId": "EN_FILTROCUE_372",
+			"isContextEntity": null,
+			"moduleId": "CNTAS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "CNTAS",
+			"queryId": "Q_CUENITTE_VP60",
+			"related": false,
+			"subModuleId": "ADMIN"
+		}
+	]
+}
