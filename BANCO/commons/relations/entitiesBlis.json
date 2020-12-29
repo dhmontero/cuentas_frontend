@@ -16,6 +16,23 @@
 			},
 			"idBli": "BLI4929_bli_cons_cliente",
 			"nameBli": "BLI_cons_cliente"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_TRANSACNI_246",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5600_bli_consultartransaccion",
+			"nameBli": "BLI_ConsultarTransaccion"
 		}
 	]
 }

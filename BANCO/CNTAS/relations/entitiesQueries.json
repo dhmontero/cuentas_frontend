@@ -5,5 +5,12 @@
 				"$ref": "../ADMIN/queries/Q_CLIETNEE_OB83.json#"
 			}
 		}
+	},
+	"EN_TRANSACNI_246": {
+		"queries": {
+			"Q_TRANIIOA_KE37": {
+				"$ref": "../ADMIN/queries/Q_TRANIIOA_KE37.json#"
+			}
+		}
 	}
 }

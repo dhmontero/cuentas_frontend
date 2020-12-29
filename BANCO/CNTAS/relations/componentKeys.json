@@ -3,6 +3,9 @@
 		"CompositeForms": {
 		},
 		"Forms": {
+			"T_CNTASMMWZDNJT_221": {
+				"name": "formConsultaTransaccion"
+			},
 			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
 			}
@@ -10,6 +13,9 @@
 		"Queries": {
 			"Q_CLIETNEE_OB83": {
 				"name": "ClienteQuery"
+			},
+			"Q_TRANIIOA_KE37": {
+				"name": "TransaccionQuery"
 			}
 		},
 		"SubForms": {
@@ -24,6 +30,9 @@
 		},
 		"EN_FILTROCAD_498": {
 			"name": "FiltroCedula"
+		},
+		"EN_TRANSACNI_246": {
+			"name": "Transaccion"
 		}
 	}
 }

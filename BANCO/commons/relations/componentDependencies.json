@@ -13,9 +13,54 @@
 		"EN_FILTROCAD_498": {
 			"labels": [
 			]
+		},
+		"EN_TRANSACNI_246": {
+			"labels": [
+			]
 		}
 	},
 	"Forms": {
+		"T_CNTASMMWZDNJT_221": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT95_BANCOSHW998"
+				],
+				"EN_TRANSACNI_246": [
+					"AT37_FECHAMFT246",
+					"AT44_IDTRANOO246",
+					"AT71_TIPOTRCA246",
+					"AT78_CUENTAWF246",
+					"AT97_TIPOCUTN246"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_NOCUENTAA_84657"
+			],
+			"queries": {
+				"Q_TRANIIOA_KE37": [
+					"",
+					"",
+					"",
+					"",
+					"QM_TRANI37AEI937_02",
+					"QM_TRANI3A377566_03",
+					"QM_TRANI7OIKA335_01",
+					"QM_TRANIE73A7236_04",
+					"QM_TRANIO3OO3445_05"
+				]
+			},
+			"subForms": [
+			]
+		},
 		"T_CNTASTHKYYPOH_380": {
 			"blis": [
 			],
@@ -66,6 +111,10 @@
 	},
 	"Queries": {
 		"Q_CLIETNEE_OB83": {
+			"labels": [
+			]
+		},
+		"Q_TRANIIOA_KE37": {
 			"labels": [
 			]
 		}

@@ -1,0 +1,24 @@
+{
+	"entities": [
+		{
+			"entityId": "EN_2DWTFTYSE_998",
+			"isContextEntity": null,
+			"moduleId": "CNTAS",
+			"related": false
+		},
+		{
+			"entityId": "EN_TRANSACNI_246",
+			"isContextEntity": null,
+			"moduleId": "CNTAS",
+			"related": false
+		}
+	],
+	"queries": [
+		{
+			"moduleId": "CNTAS",
+			"queryId": "Q_TRANIIOA_KE37",
+			"related": false,
+			"subModuleId": "ADMIN"
+		}
+	]
+}

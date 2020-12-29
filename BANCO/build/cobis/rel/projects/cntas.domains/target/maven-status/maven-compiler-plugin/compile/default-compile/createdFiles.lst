@@ -1,3 +1,4 @@
 com\cobiscorp\cobis\cntas\model\FiltroCedula.class
 com\cobiscorp\cobis\cntas\model\Cliente.class
+com\cobiscorp\cobis\cntas\model\Transaccion.class
 com\cobiscorp\cobis\cntas\model\Cuenta.class

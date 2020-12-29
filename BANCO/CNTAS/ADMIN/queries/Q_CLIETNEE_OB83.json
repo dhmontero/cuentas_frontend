@@ -46,13 +46,11 @@
 			"attribute": {
 				"$ref": "../../../CNTAS/entities/EN_CLIENTENW_161.json#/attributes/AT92_CEDULACT161"
 			},
-			"attributeQuery": "cedula",
 			"customizationLayer": "",
 			"customizationLayerDescription": "",
 			"defaultValue": null,
 			"defaultValueDataType": null,
 			"function": null,
-			"name": "QueryMember",
 			"operator": null,
 			"order": 4,
 			"orderBy": null,
@@ -68,13 +66,11 @@
 			"attribute": {
 				"$ref": "../../../CNTAS/entities/EN_CLIENTENW_161.json#/attributes/AT76_CODIGOCE161"
 			},
-			"attributeQuery": "codigoCliente",
 			"customizationLayer": "",
 			"customizationLayerDescription": "",
 			"defaultValue": null,
 			"defaultValueDataType": null,
 			"function": null,
-			"name": "QueryMember",
 			"operator": null,
 			"order": 1,
 			"orderBy": null,
@@ -90,13 +86,11 @@
 			"attribute": {
 				"$ref": "../../../CNTAS/entities/EN_CLIENTENW_161.json#/attributes/AT35_APELLIDO161"
 			},
-			"attributeQuery": "apellido",
 			"customizationLayer": "",
 			"customizationLayerDescription": "",
 			"defaultValue": null,
 			"defaultValueDataType": null,
 			"function": null,
-			"name": "QueryMember",
 			"operator": null,
 			"order": 3,
 			"orderBy": null,
@@ -112,13 +106,11 @@
 			"attribute": {
 				"$ref": "../../../CNTAS/entities/EN_CLIENTENW_161.json#/attributes/AT44_NOMBRENN161"
 			},
-			"attributeQuery": "nombre",
 			"customizationLayer": "",
 			"customizationLayerDescription": "",
 			"defaultValue": null,
 			"defaultValueDataType": null,
 			"function": null,
-			"name": "QueryMember",
 			"operator": null,
 			"order": 2,
 			"orderBy": null,
