@@ -1,0 +1,129 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "C"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "706715"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cuenta",
+			"type": "CUSTOM",
+			"value": "nroCuenta"
+		}
+	],
+	"name": "BLI_consulta_cliente_nroCuenta",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI7960_bli_consulta_cliente_nrocuenta",
+	"patternName": "BLI_consulta_cliente_nroCuenta",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "7ab4846a-6db8-42f3-b196-639a80e7a01c",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 1,
+			"queryName": "SELECT\r\n    \t\t\t\u0027N\ufffdmero cuenta\u0027 = ca_banco,\r\n    \t\t\t\u0027Saldo\u0027 = ca_saldo,\r\n    \t\t\t\u0027Cedula cliente\u0027 = cl_cedula,\r\n\t   \t\t\t\u0027Nombre cliente\u0027 = cl_nombre,\r\n\t   \t\t\t\u0027Apellido clilente\u0027 = cl_apellido,\r\n\t   \t\t\t\u0027Tipo cuenta\u0027 = \u0027CUENTA AHORROS\u0027\r\n\t   \t\t\tFROM"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "7ab4846a-6db8-42f3-b196-639a80e7a01c",
+			"columns": [
+				{
+					"attributeId": "AT23_NROCUETA177",
+					"entityId": "EN_FILTRONNE_177",
+					"format": "",
+					"name": "Nrocuenta",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT34_SALDOZWR177",
+					"entityId": "EN_FILTRONNE_177",
+					"format": "",
+					"name": "Saldo",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT67_CEDULASU177",
+					"entityId": "EN_FILTRONNE_177",
+					"format": "",
+					"name": "Cedula cliente",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT20_NOMBREFQ177",
+					"entityId": "EN_FILTRONNE_177",
+					"format": "",
+					"name": "Nombre cliente",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT21_APELLIDD177",
+					"entityId": "EN_FILTRONNE_177",
+					"format": "",
+					"name": "Apellido clilente",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT70_TIPOCUAA177",
+					"entityId": "EN_FILTRONNE_177",
+					"format": "",
+					"name": "Tipo cuenta",
+					"position": 6,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_FILTRONNE_177",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "FiltroNroCuenta"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.g3_sp_busqueda_cliente",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

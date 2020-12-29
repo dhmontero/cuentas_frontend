@@ -5,7 +5,23 @@
 		"forms": {
 			"CNTAS": [
 				{
-					"generated": 0,
+					"generated": 2,
+					"moduleId": "CNTAS",
+					"name": "formDeposito",
+					"subModuleId": "ADMIN",
+					"taskId": "T_CNTASBSSWDNRB_992",
+					"type": "Simple form"
+				},
+				{
+					"generated": 2,
+					"moduleId": "CNTAS",
+					"name": "formModalDeposito",
+					"subModuleId": "ADMIN",
+					"taskId": "T_CNTASHIHYVHIB_835",
+					"type": "Simple form"
+				},
+				{
+					"generated": 2,
 					"moduleId": "CNTAS",
 					"name": "frmCrearCuenta",
 					"subModuleId": "ADMIN",

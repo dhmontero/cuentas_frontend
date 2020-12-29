@@ -1,0 +1,175 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_FILTNORC_VL65_433",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_FILTNORC_VL65",
+		"version": "1.0.0"
+	},
+	"isAutomatic": false,
+	"isImported": false,
+	"mainEntityId": "EN_FILTRONNE_177",
+	"mainEntityModule": "CNTAS",
+	"mainEntityName": {
+		"$ref": "../../../CNTAS/relations/componentKeys.json#/Entities/EN_FILTRONNE_177/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../CNTAS/relations/componentKeys.json#/ADMIN/Queries/Q_FILTNORC_VL65/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "nombre",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT20_NOMBREFQ177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 4,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_FILTN555RV250_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "saldo",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT34_SALDOZWR177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 2,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_FILTN556OO870_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "nroCuenta",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT23_NROCUETA177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 1,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_FILTN6VCO6869_01",
+			"select": true,
+			"selectStr": "T",
+			"where": true,
+			"whereStr": "T"
+		},
+		{
+			"alias": "tipoCuenta",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT70_TIPOCUAA177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 6,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_FILTNL5OC5557_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "cedula",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT67_CEDULASU177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 3,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_FILTNLORC6705_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "apellido",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_FILTRONNE_177.json#/attributes/AT21_APELLIDD177"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": 5,
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_FILTNVOV56922_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "CNTAS",
+				"subModuleId": "ADMIN"
+			}
+		}
+	]
+}

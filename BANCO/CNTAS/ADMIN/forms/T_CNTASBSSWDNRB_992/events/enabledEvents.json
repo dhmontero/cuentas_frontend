@@ -1,0 +1,18 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_FILTNORC_VL65",
+		"controlName": "FiltroNroCuentaQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../../CNTAS/ADMIN/queries/Q_FILTNORC_VL65.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "FiltroNroCuenta",
+		"eventsType": "queryEventType"
+	}
+]

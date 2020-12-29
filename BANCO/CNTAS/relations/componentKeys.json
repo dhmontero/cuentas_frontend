@@ -3,6 +3,12 @@
 		"CompositeForms": {
 		},
 		"Forms": {
+			"T_CNTASBSSWDNRB_992": {
+				"name": "formDeposito"
+			},
+			"T_CNTASHIHYVHIB_835": {
+				"name": "formModalDeposito"
+			},
 			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
 			}
@@ -10,20 +16,38 @@
 		"Queries": {
 			"Q_CLIETNEE_OB83": {
 				"name": "ClienteQuery"
+			},
+			"Q_CUENTATA_BW11": {
+				"name": "FiltroCuentaQuery"
+			},
+			"Q_FILTNORC_VL65": {
+				"name": "FiltroNroCuentaQuery"
 			}
 		},
 		"SubForms": {
 		}
 	},
 	"Entities": {
+		"EN_1TNQKJGOY_152": {
+			"name": "Entity1"
+		},
 		"EN_2DWTFTYSE_998": {
 			"name": "Cuenta"
+		},
+		"EN_2JIGLIXNB_885": {
+			"name": "Entity2"
 		},
 		"EN_CLIENTENW_161": {
 			"name": "Cliente"
 		},
 		"EN_FILTROCAD_498": {
 			"name": "FiltroCedula"
+		},
+		"EN_FILTRONNE_177": {
+			"name": "FiltroNroCuenta"
+		},
+		"EN_TRANSACIO_762": {
+			"name": "Transaccion"
 		}
 	}
 }

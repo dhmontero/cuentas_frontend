@@ -1,0 +1,175 @@
+{
+	"customEvents": [
+		{
+			"customEventId": "CEQY_130_Q_CUENTATA_BW11_941",
+			"customizationLayer": 0,
+			"customizationLayerDescription": "ECU",
+			"enabled": "T",
+			"eventActions": [
+				{
+					"actionArgs": [
+					],
+					"actionId": "CUSTOM",
+					"actionType": "CUSTOM"
+				}
+			],
+			"executionType": 7,
+			"queryEventType": {
+				"availableExecutionType": 7,
+				"description": "Sobreescribe la ejecuci\u00f3n de un Query",
+				"eventId": 130,
+				"name": "ExecuteQuery"
+			}
+		}
+	],
+	"customizationLayer": 0,
+	"customizationLayerDescription": "ECU",
+	"hasEvents": true,
+	"id": {
+		"queryId": "Q_CUENTATA_BW11",
+		"version": "1.0.0"
+	},
+	"isAutomatic": true,
+	"isImported": false,
+	"mainEntityId": "EN_2DWTFTYSE_998",
+	"mainEntityModule": "CNTAS",
+	"mainEntityName": {
+		"$ref": "../../../CNTAS/relations/componentKeys.json#/Entities/EN_2DWTFTYSE_998/name"
+	},
+	"mainEntityVersion": "1.0.0",
+	"name": {
+		"$ref": "../../../CNTAS/relations/componentKeys.json#/ADMIN/Queries/Q_CUENTATA_BW11/name"
+	},
+	"queryMembers": [
+		{
+			"alias": "banco",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT95_BANCOSHW998"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "3",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CUENT111W1613_04",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fechaModificacion",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT96_FECHAMII998"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "4",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CUENTA1111440_05",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "saldo",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT87_SALDOWDJ998"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "2",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CUENTA1TA1207_03",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "cliente",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT97_CLIENTEE998"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "5",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CUENTT11WT672_06",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "attribute6202",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT6203_6202LOIL998"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "1",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CUENTTA1A1745_02",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		},
+		{
+			"alias": "fechaCreacion",
+			"attribute": {
+				"$ref": "../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT61_FECHACEE998"
+			},
+			"customizationLayer": "",
+			"customizationLayerDescription": "",
+			"defaultValue": null,
+			"defaultValueDataType": null,
+			"function": null,
+			"operator": null,
+			"order": "0",
+			"orderBy": null,
+			"orderByDirection": null,
+			"queryMemberId": "QM_CUENTWT1AW642_01",
+			"select": true,
+			"selectStr": "T",
+			"where": false,
+			"whereStr": "F"
+		}
+	],
+	"related": false,
+	"sqlWhere": null,
+	"subModules": [
+		{
+			"id": {
+				"moduleId": "CNTAS",
+				"subModuleId": "ADMIN"
+			}
+		}
+	]
+}
