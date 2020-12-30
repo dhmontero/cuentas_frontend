@@ -30,6 +30,9 @@
 		},
 		"EN_FILTRONCN_480": {
 			"name": "FiltroNroCuenta"
+		},
+		"EN_TRANSACCN_247": {
+			"name": "Transaccion"
 		}
 	}
 }
