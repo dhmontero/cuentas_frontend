@@ -10,8 +10,8 @@ Import-Package: com.cobiscorp.cobis.cntas.model,com.cobiscorp.cobis.co
  .cwc.context,com.cobiscorp.cobis.cwc.kernel.sp.dto,com.cobiscorp.cobi
  s.cwc.kernel.sp.impl,com.cobiscorp.designer.api,com.cobiscorp.designe
  r.bli.api,com.cobiscorp.designer.bli.manager,com.cobiscorp.designer.b
- li.util,com.cobiscorp.ecobis.map,com.cobiscorp.ecobis.map.dto,com.cob
- iscorp.ecobis.map.enums
+ li.util,com.cobiscorp.designer.exception,com.cobiscorp.ecobis.map,com
+ .cobiscorp.ecobis.map.dto,com.cobiscorp.ecobis.map.enums
 Service-Component: OSGI-INF/serviceComponents.xml
 Tool: Bundlor 1.0.0.RELEASE
 TFS-ChangeSet: 67366d0d3d8006b43e8d6c7740165dc0115f6584

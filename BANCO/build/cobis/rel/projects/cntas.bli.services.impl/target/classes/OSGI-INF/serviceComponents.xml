@@ -8,4 +8,22 @@
         <property name="bli.id" type="String" value="BLI4929_bli_cons_cliente"/>
         <property name="service.pid" value="com.cobiscorp.cobis.cntas.bli.services.impl.BLI4929_bli_cons_cliente"/>
     </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5042_bli_insertar_cahorros">
+        <implementation class="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5042_bli_insertar_cahorros"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="CNTAS"/>
+        <property name="bli.id" type="String" value="BLI5042_bli_insertar_cahorros"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5042_bli_insertar_cahorros"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5297_bli_insertar_ccorriente">
+        <implementation class="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5297_bli_insertar_ccorriente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="CNTAS"/>
+        <property name="bli.id" type="String" value="BLI5297_bli_insertar_ccorriente"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5297_bli_insertar_ccorriente"/>
+    </scr:component>
 </components>

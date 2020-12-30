@@ -1,0 +1,77 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_2DWTFTYSE_998",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "Cuenta"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "I"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "706713"
+		},
+		{
+			"attributeId": "AT97_CLIENTEE998",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "EN_2DWTFTYSE_998",
+			"format": "",
+			"name": "@i_cc_cliente",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT87_SALDOWDJ998",
+			"bddType": "decimal",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_2DWTFTYSE_998",
+			"format": "",
+			"name": "@i_cc_saldo",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_insertar_cCorriente",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5297_bli_insertar_ccorriente",
+	"patternName": "BLI_insertar_cCorriente",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.g3_sp_cuenta_corriente",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

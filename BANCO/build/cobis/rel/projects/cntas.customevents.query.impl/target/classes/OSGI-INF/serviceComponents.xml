@@ -7,6 +7,5 @@
         <property name="query.id" type="String" value="Q_CLIETNEE_OB83"/>
         <property name="query.version" type="String" value="1.0.0"/>
         <property name="service.pid" value="com.cobiscorp.cobis.cntas.customevents.impl.query.executequery.ClienteQuery_Q_CLIETNEE_OB83"/>
-        <reference name="bLI4929_bli_cons_cliente" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI4929_bli_cons_cliente)" bind="setBLI4929_bli_cons_cliente" unbind="unsetBLI4929_bli_cons_cliente"/>
     </scr:component>
 </components>

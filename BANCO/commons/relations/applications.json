@@ -8,6 +8,16 @@
 					"generated": 4,
 					"moduleId": "CNTAS",
 					"moduleName": "CUENTAS",
+					"name": "frmInsertarCuenta",
+					"subModuleId": "ADMIN",
+					"subModuleName": "ADMIN",
+					"taskId": "T_CNTASPNFEFZNV_404",
+					"type": "Simple form"
+				},
+				{
+					"generated": 4,
+					"moduleId": "CNTAS",
+					"moduleName": "CUENTAS",
 					"name": "frmCrearCuenta",
 					"subModuleId": "ADMIN",
 					"subModuleName": "ADMIN",

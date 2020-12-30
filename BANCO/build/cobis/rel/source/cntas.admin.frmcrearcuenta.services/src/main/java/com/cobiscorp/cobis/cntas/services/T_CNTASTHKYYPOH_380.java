@@ -1,6 +1,6 @@
 /*
  * Archivo: T_CNTASTHKYYPOH_380.java
- * Fecha: 2020-12-28T22:10:56Z
+ * Fecha: 2020-12-30T14:33:56Z
  *
  * Esta aplicacion es parte de los paquetes bancarios propiedad de COBISCORP.
  * Su uso no autorizado queda expresamente prohibido asi como cualquier

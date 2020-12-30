@@ -13,9 +13,9 @@ public class Cuenta {
 	public static final String ENTITY_NAME = "Cuenta";
 	
 	
-	public static final Property<String> FECHACREACION = new Property<String>("fechaCreacion", String.class, false);
+	public static final Property<String> TIPOCUENTA = new Property<String>("tipoCuenta", String.class, false);
 	
-	public static final Property<String> ATTRIBUTE6202 = new Property<String>("attribute6202", String.class, false);
+	public static final Property<String> FECHACREACION = new Property<String>("fechaCreacion", String.class, false);
 	
 	public static final Property<String> SALDO = new Property<String>("saldo", String.class, false);
 	

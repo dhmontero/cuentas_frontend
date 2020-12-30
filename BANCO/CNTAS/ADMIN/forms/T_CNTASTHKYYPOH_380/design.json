@@ -82,7 +82,7 @@
 							"allowPagingStr": "F",
 							"allowSorting": false,
 							"allowSortingStr": "F",
-							"autoSync": null,
+							"autoSync": false,
 							"componentStyle": null,
 							"confirmRowDeletion": false,
 							"confirmRowDeletionStr": "F",
@@ -93,10 +93,10 @@
 							"customUrlDialog": null,
 							"deleteCommandEnabled": true,
 							"deleteCommandEnabledStr": "T",
-							"dialogTitleLabelId": null,
+							"dialogTitleLabelId": "LBL_CNTAS_CREARCUAA_22260",
 							"editCommandEnabled": true,
 							"editCommandEnabledStr": "T",
-							"editMode": "0",
+							"editMode": "3",
 							"entityName": {
 								"$ref": "../../../../CNTAS/entities/EN_CLIENTENW_161.json#/name"
 							},
@@ -112,9 +112,9 @@
 							"insertCommandEnabled": true,
 							"insertCommandEnabledStr": "T",
 							"isCustomized": false,
-							"modalSize": null,
+							"modalSize": "md",
 							"modeSelection": "None",
-							"moduleIdDialog": null,
+							"moduleIdDialog": "CNTAS",
 							"multiSelectEnabledStr": "F",
 							"name": "QV_US83_NKI70",
 							"options": 0,
@@ -130,10 +130,10 @@
 							"queryViewType": "Grid",
 							"rowCommandAppearance": 0,
 							"style": null,
-							"subModuleIdDialog": null,
-							"taskIdDialog": "1.0.0",
-							"taskVersionDialog": null,
-							"typeFormDialog": null,
+							"subModuleIdDialog": "ADMIN",
+							"taskIdDialog": "T_CNTASPNFEFZNV_404",
+							"taskVersionDialog": "1.0.0",
+							"typeFormDialog": "forms",
 							"userControl": {
 								"customizationLayer": 0,
 								"customizationLayerDescription": "ECU",
@@ -142,7 +142,7 @@
 								"type": "I",
 								"userControlId": "Grid"
 							},
-							"viewContainerIdDialog": null
+							"viewContainerIdDialog": "VC_FRMINSERAN_314404"
 						},
 						"queryViewId": "QV_US83_NKI70",
 						"responsiveLayouts": null,
@@ -411,245 +411,6 @@
 								},
 								"visible": 4095,
 								"visualAttributeId": "VA_VABUTTONGUDQHVD_413568",
-								"width": null,
-								"widthComposite": "D"
-							}
-						]
-					},
-					{
-						"collapsedStr": "F",
-						"colSpan": 1,
-						"columnsNum": 3,
-						"componentStyle": null,
-						"customEvents": [
-						],
-						"enabled": 4095,
-						"eventType": 0,
-						"groupId": "G_FRMCREARTR_336568",
-						"htmlSection": "F",
-						"independentValidation": "F",
-						"isCustomized": false,
-						"layoutType": "Group",
-						"name": "Group2355",
-						"order": 3,
-						"orientation": "V",
-						"responsiveLayouts": null,
-						"responsivity": false,
-						"style": null,
-						"visible": 4095,
-						"visualAttributes": [
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"colSpan": 1,
-								"componentInGrid": false,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"include": 4095,
-								"isCustomized": false,
-								"label": {
-									"defaultValue": {
-										"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_CREARCUAA_22260"
-									},
-									"labelId": "LBL_CNTAS_CREARCUAA_22260",
-									"moduleId": "CNTAS"
-								},
-								"maxRecords": null,
-								"name": "VA_VASIMPLELABELLL_489568",
-								"options": 0,
-								"order": 1,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"userControl": {
-									"userControlId": "SimpleLabel"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_VASIMPLELABELLL_489568",
-								"width": null,
-								"widthComposite": "D"
-							}
-						]
-					},
-					{
-						"collapsedStr": "F",
-						"colSpan": 1,
-						"columnsNum": 3,
-						"componentStyle": null,
-						"customEvents": [
-						],
-						"enabled": 4095,
-						"entity": {
-							"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#"
-						},
-						"eventType": 0,
-						"groupId": "G_FRMCREAUCC_279568",
-						"htmlSection": "F",
-						"independentValidation": "F",
-						"isCustomized": false,
-						"layoutType": "Group",
-						"name": "Group1164",
-						"order": 4,
-						"orientation": "V",
-						"responsiveLayouts": null,
-						"responsivity": false,
-						"style": null,
-						"visible": 4095,
-						"visualAttributes": [
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"attribute": {
-									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT6203_6202LOIL998"
-								},
-								"attributeValidations": [
-								],
-								"cacheDuration": 0,
-								"catalogName": "g3_cl_tCuenta",
-								"colSpan": 1,
-								"componentInGrid": false,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"enabled": 4095,
-								"entityQuery": null,
-								"include": 4095,
-								"isCustomized": false,
-								"label": {
-									"defaultValue": {
-										"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_TIPOCUETA_93397"
-									},
-									"labelId": "LBL_CNTAS_TIPOCUETA_93397",
-									"moduleId": "CNTAS"
-								},
-								"maxRecords": null,
-								"minChars": null,
-								"name": "attribute6202",
-								"options": 0,
-								"order": 1,
-								"queryId": null,
-								"queryMemberText": {
-									"attribute": {
-										"attributeId": null,
-										"name": null
-									},
-									"queryMemberId": null
-								},
-								"queryMemberValue": {
-									"attribute": {
-										"attributeId": null,
-										"name": null
-									},
-									"queryMemberId": null
-								},
-								"queryModule": null,
-								"queryVersion": null,
-								"readOnly": 8,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"type": null,
-								"userControl": {
-									"type": "I",
-									"userControlId": "ComboBox"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_6202XTSKRZYWIWM_468568",
-								"width": null,
-								"widthComposite": "D"
-							},
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"attribute": {
-									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT87_SALDOWDJ998"
-								},
-								"attributeValidations": [
-								],
-								"colSpan": 1,
-								"componentInGrid": false,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"enabled": 4095,
-								"format": "",
-								"include": 4095,
-								"isCustomized": false,
-								"label": {
-									"defaultValue": {
-										"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_SALDONBGU_29941"
-									},
-									"labelId": "LBL_CNTAS_SALDONBGU_29941",
-									"moduleId": "CNTAS"
-								},
-								"maxRecords": null,
-								"name": "saldo",
-								"options": 0,
-								"order": 2,
-								"readOnly": 8,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"textRows": 0,
-								"userControl": {
-									"type": "I",
-									"userControlId": "TextInputBox"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_SALDOYLTVXMNELY_905568",
-								"width": null,
-								"widthComposite": "D"
-							},
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"attributeValidations": [
-								],
-								"colSpan": 1,
-								"componentInGrid": false,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"enabled": 4095,
-								"entityQuery": null,
-								"imageId": "fa fa-save",
-								"include": 4095,
-								"isCustomized": false,
-								"label": {
-									"defaultValue": {
-										"$ref": "../../../../CNTAS/assets/languages/CNTAS.json#/CNTAS/LBL/LBL_CNTAS_GUARDAROD_73049"
-									},
-									"labelId": "LBL_CNTAS_GUARDAROD_73049",
-									"moduleId": "CNTAS"
-								},
-								"maxRecords": null,
-								"name": "VA_VABUTTONQMJMDLP_107568",
-								"options": 0,
-								"order": 3,
-								"queryModule": null,
-								"queryVersion": null,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"userControl": {
-									"type": "A",
-									"userControlId": "Button"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_VABUTTONQMJMDLP_107568",
 								"width": null,
 								"widthComposite": "D"
 							}

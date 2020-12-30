@@ -3,6 +3,9 @@
 		"CompositeForms": {
 		},
 		"Forms": {
+			"T_CNTASPNFEFZNV_404": {
+				"name": "frmInsertarCuenta"
+			},
 			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
 			}

@@ -16,6 +16,40 @@
 			},
 			"idBli": "BLI4929_bli_cons_cliente",
 			"nameBli": "BLI_cons_cliente"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_2DWTFTYSE_998",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5042_bli_insertar_cahorros",
+			"nameBli": "BLI_insertar_cAhorros"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_2DWTFTYSE_998",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI5297_bli_insertar_ccorriente",
+			"nameBli": "BLI_insertar_cCorriente"
 		}
 	]
 }

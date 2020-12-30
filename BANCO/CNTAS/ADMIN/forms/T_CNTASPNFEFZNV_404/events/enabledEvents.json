@@ -1,0 +1,16 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "CM_TCNTASPN_A89",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	}
+]

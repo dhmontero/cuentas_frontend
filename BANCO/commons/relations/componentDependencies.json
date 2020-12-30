@@ -16,14 +16,37 @@
 		}
 	},
 	"Forms": {
-		"T_CNTASTHKYYPOH_380": {
+		"T_CNTASPNFEFZNV_404": {
 			"blis": [
 			],
 			"entities": {
 				"EN_2DWTFTYSE_998": [
-					"AT6203_6202LOIL998",
-					"AT87_SALDOWDJ998"
-				],
+					"AT30_TIPOCUAT998",
+					"AT87_SALDOWDJ998",
+					"AT97_CLIENTEE998"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_CLIENTEDE_28851",
+				"LBL_CNTAS_GUARDAROD_73049",
+				"LBL_CNTAS_SALDONBGU_29941",
+				"LBL_CNTAS_TIPOCUETA_93397"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_CNTASTHKYYPOH_380": {
+			"blis": [
+			],
+			"entities": {
 				"EN_CLIENTENW_161": [
 					"AT35_APELLIDO161",
 					"AT44_NOMBRENN161",
@@ -42,11 +65,7 @@
 			],
 			"labels": [
 				"LBL_CNTAS_BUSCARUYH_74684",
-				"LBL_CNTAS_CEDULAXHP_77776",
-				"LBL_CNTAS_CREARCUAA_22260",
-				"LBL_CNTAS_GUARDAROD_73049",
-				"LBL_CNTAS_SALDONBGU_29941",
-				"LBL_CNTAS_TIPOCUETA_93397"
+				"LBL_CNTAS_CEDULAXHP_77776"
 			],
 			"queries": {
 				"Q_CLIETNEE_OB83": [
