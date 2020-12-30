@@ -27,6 +27,9 @@
 		},
 		"EN_FILTROCAD_498": {
 			"name": "FiltroCedula"
+		},
+		"EN_FILTRONCN_480": {
+			"name": "FiltroNroCuenta"
 		}
 	}
 }
