@@ -5,5 +5,12 @@
 				"$ref": "../ADMIN/queries/Q_CLIETNEE_OB83.json#"
 			}
 		}
+	},
+	"EN_FILTRONCN_480": {
+		"queries": {
+			"Q_FILTCRAT_SG91": {
+				"$ref": "../ADMIN/queries/Q_FILTCRAT_SG91.json#"
+			}
+		}
 	}
 }

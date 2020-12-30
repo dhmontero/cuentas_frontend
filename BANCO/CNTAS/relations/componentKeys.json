@@ -13,6 +13,9 @@
 		"Queries": {
 			"Q_CLIETNEE_OB83": {
 				"name": "ClienteQuery"
+			},
+			"Q_FILTCRAT_SG91": {
+				"name": "FiltroNroCuentaQuery"
 			}
 		},
 		"SubForms": {
