@@ -3,6 +3,23 @@
 		{
 			"entities": {
 				"inputEntity": [
+					{
+						"entityId": "EN_TRANSFEER_796",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI3778_bli_transferencia",
+			"nameBli": "BLI_Transferencia"
+		},
+		{
+			"entities": {
+				"inputEntity": [
 				],
 				"outputEntity": [
 				],

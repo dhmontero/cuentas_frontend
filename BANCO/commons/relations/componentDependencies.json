@@ -25,6 +25,10 @@
 		"EN_FILTROCUE_372": {
 			"labels": [
 			]
+		},
+		"EN_TRANSFEER_796": {
+			"labels": [
+			]
 		}
 	},
 	"Forms": {
@@ -34,6 +38,7 @@
 			"entities": {
 				"EN_2DWTFTYSE_998": [
 					"AT61_FECHACEE998",
+					"AT6203_6202LOIL998",
 					"AT87_SALDOWDJ998",
 					"AT95_BANCOSHW998",
 					"AT96_FECHAMII998",
@@ -58,6 +63,7 @@
 				"Q_CUENAAAA_US24": [
 					"",
 					"",
+					"QM_CUENAA4AUS821_02",
 					"QM_CUENAAAA4S466_01",
 					"QM_CUENAAAAAS921_03",
 					"QM_CUENAAAASA955_04",
@@ -117,20 +123,24 @@
 		},
 		"T_CNTASUXJTKMDW_656": {
 			"blis": [
+				"BLI3778_bli_transferencia"
 			],
 			"entities": {
 				"EN_2DWTFTYSE_998": [
-					"AT87_SALDOWDJ998"
 				],
 				"EN_CUENTADSE_522": [
 					"AT11_CLIENTEE522",
 					"AT28_SALDOKWQ522",
 					"AT52_BANCODZN522",
 					"AT52_FECHACNC522",
-					"AT61_FECHAMAO522"
+					"AT61_FECHAMAO522",
+					"AT74_TIPOCUNN522"
 				],
 				"EN_FILTROCUE_372": [
-					"AT84_CUENTADD372"
+					"AT84_CUENTADD372",
+					"AT97_VALORXOW372"
+				],
+				"EN_TRANSFEER_796": [
 				]
 			},
 			"externalEntities": {
@@ -143,13 +153,14 @@
 				"LBL_CNTAS_BUSCARUYH_74684",
 				"LBL_CNTAS_CUENTADTT_17895",
 				"LBL_CNTAS_NOCUENTAA_90338",
-				"LBL_CNTAS_TARANSFRR_28094",
-				"LBL_CNTAS_VALORATRE_89141"
+				"LBL_CNTAS_TRANSFERR_57327",
+				"LBL_CNTAS_VALORATSS_93295"
 			],
 			"queries": {
 				"Q_CUENITTE_VP60": [
 					"",
 					"",
+					"QM_CUENI0TPVP975_01",
 					"QM_CUENI0TTPT770_04",
 					"QM_CUENIETTT6428_05",
 					"QM_CUENIT0TTT347_02",

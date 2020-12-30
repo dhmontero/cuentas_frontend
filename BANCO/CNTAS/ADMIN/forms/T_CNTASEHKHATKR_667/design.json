@@ -251,7 +251,7 @@
 						"queryView": {
 							"actionDesign": "Button",
 							"actions": [
-								"Create"
+								"Update"
 							],
 							"allowPaging": false,
 							"allowPagingStr": "F",
@@ -268,9 +268,9 @@
 							"customUrlDialog": null,
 							"deleteCommandEnabled": false,
 							"deleteCommandEnabledStr": "F",
-							"dialogTitleLabelId": "LBL_CNTAS_TRANSFERR_30445",
-							"editCommandEnabled": false,
-							"editCommandEnabledStr": "F",
+							"dialogTitleLabelId": "LBL_CNTAS_TRANSFERR_62208",
+							"editCommandEnabled": true,
+							"editCommandEnabledStr": "T",
 							"editMode": "3",
 							"entityName": {
 								"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/name"
@@ -279,20 +279,21 @@
 							"hasDetailString": "F",
 							"height": null,
 							"includeQueryMembers": [
-								"AT97_CLIENTEE998",
-								"AT95_BANCOSHW998",
-								"AT87_SALDOWDJ998",
+								"AT6203_6202LOIL998",
 								"AT61_FECHACEE998",
-								"AT96_FECHAMII998"
+								"AT87_SALDOWDJ998",
+								"AT95_BANCOSHW998",
+								"AT96_FECHAMII998",
+								"AT97_CLIENTEE998"
 							],
-							"insertCommandEnabled": true,
-							"insertCommandEnabledStr": "T",
+							"insertCommandEnabled": false,
+							"insertCommandEnabledStr": "F",
 							"isCustomized": false,
 							"modalSize": "md",
 							"modeSelection": "None",
 							"moduleIdDialog": "CNTAS",
 							"multiSelectEnabledStr": "F",
-							"name": "QV_MN24_MNM48",
+							"name": "QV_GA24_VSC19",
 							"options": 0,
 							"pageSize": null,
 							"query": {
@@ -302,7 +303,7 @@
 							"queryVersion": "1.0.0",
 							"queryViewCustomActions": [
 							],
-							"queryViewId": "QV_MN24_MNM48",
+							"queryViewId": "QV_GA24_VSC19",
 							"queryViewType": "Grid",
 							"rowCommandAppearance": 0,
 							"style": null,
@@ -320,12 +321,107 @@
 							},
 							"viewContainerIdDialog": "VC_CUENTADEON_686656"
 						},
-						"queryViewId": "QV_MN24_MNM48",
+						"queryViewId": "QV_GA24_VSC19",
 						"responsiveLayouts": null,
 						"responsivity": false,
 						"style": null,
 						"visible": 4095,
 						"visualAttributes": [
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT6203_6202LOIL998"
+								},
+								"attributeValidations": [
+								],
+								"cacheDuration": 0,
+								"catalogName": null,
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"entityQuery": null,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"minChars": null,
+								"name": "tipoCuenta",
+								"options": 0,
+								"order": 1,
+								"queryId": null,
+								"queryMemberText": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryMemberValue": {
+									"attribute": {
+										"attributeId": null,
+										"name": null
+									},
+									"queryMemberId": null
+								},
+								"queryModule": null,
+								"queryVersion": null,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"type": "none",
+								"userControl": {
+									"type": "I",
+									"userControlId": "ComboBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_COMBOBOXAIIQGII_634554",
+								"width": null,
+								"widthComposite": "D"
+							},
+							{
+								"aggregate": null,
+								"aggregateId": null,
+								"attribute": {
+									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT97_CLIENTEE998"
+								},
+								"attributeValidations": [
+								],
+								"colSpan": 1,
+								"componentInGrid": true,
+								"componentStyle": null,
+								"customEvents": [
+								],
+								"customizationLayer": 0,
+								"customizationLayerDescription": "ECU",
+								"enabled": 4095,
+								"include": 4095,
+								"isCustomized": false,
+								"maxRecords": null,
+								"name": "cliente",
+								"options": 0,
+								"order": 6,
+								"readOnly": 8,
+								"responsiveLayouts": null,
+								"responsivity": false,
+								"sizeWidthComposite": null,
+								"style": null,
+								"textRows": 0,
+								"userControl": {
+									"type": "I",
+									"userControlId": "TextInputBox"
+								},
+								"visible": 4095,
+								"visualAttributeId": "VA_TEXTINPUTBOXCZN_687554",
+								"width": null,
+								"widthComposite": "D"
+							},
 							{
 								"aggregate": null,
 								"aggregateId": null,
@@ -347,7 +443,7 @@
 								"maxRecords": null,
 								"name": "banco",
 								"options": 0,
-								"order": 2,
+								"order": 4,
 								"readOnly": 8,
 								"responsiveLayouts": null,
 								"responsivity": false,
@@ -359,7 +455,7 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXLBO_956554",
+								"visualAttributeId": "VA_TEXTINPUTBOXJXH_648554",
 								"width": null,
 								"widthComposite": "D"
 							},
@@ -396,7 +492,7 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXNUN_690554",
+								"visualAttributeId": "VA_TEXTINPUTBOXQZP_487554",
 								"width": null,
 								"widthComposite": "D"
 							},
@@ -421,7 +517,7 @@
 								"maxRecords": null,
 								"name": "fechaCreacion",
 								"options": 0,
-								"order": 4,
+								"order": 2,
 								"readOnly": 8,
 								"responsiveLayouts": null,
 								"responsivity": false,
@@ -433,7 +529,7 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXQRY_765554",
+								"visualAttributeId": "VA_TEXTINPUTBOXSAM_447554",
 								"width": null,
 								"widthComposite": "D"
 							},
@@ -470,44 +566,7 @@
 									"userControlId": "TextInputBox"
 								},
 								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXSIF_316554",
-								"width": null,
-								"widthComposite": "D"
-							},
-							{
-								"aggregate": null,
-								"aggregateId": null,
-								"attribute": {
-									"$ref": "../../../../CNTAS/entities/EN_2DWTFTYSE_998.json#/attributes/AT97_CLIENTEE998"
-								},
-								"attributeValidations": [
-								],
-								"colSpan": 1,
-								"componentInGrid": true,
-								"componentStyle": null,
-								"customEvents": [
-								],
-								"customizationLayer": 0,
-								"customizationLayerDescription": "ECU",
-								"enabled": 4095,
-								"include": 4095,
-								"isCustomized": false,
-								"maxRecords": null,
-								"name": "cliente",
-								"options": 0,
-								"order": 1,
-								"readOnly": 8,
-								"responsiveLayouts": null,
-								"responsivity": false,
-								"sizeWidthComposite": null,
-								"style": null,
-								"textRows": 0,
-								"userControl": {
-									"type": "I",
-									"userControlId": "TextInputBox"
-								},
-								"visible": 4095,
-								"visualAttributeId": "VA_TEXTINPUTBOXVUL_666554",
+								"visualAttributeId": "VA_TEXTINPUTBOXZAA_329554",
 								"width": null,
 								"widthComposite": "D"
 							}

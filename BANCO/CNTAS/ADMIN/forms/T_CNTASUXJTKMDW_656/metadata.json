@@ -2,7 +2,7 @@
 	"entities": [
 		{
 			"entityId": "EN_2DWTFTYSE_998",
-			"isContextEntity": null,
+			"isContextEntity": true,
 			"moduleId": "CNTAS",
 			"related": false
 		},
@@ -15,6 +15,12 @@
 		{
 			"entityId": "EN_FILTROCUE_372",
 			"isContextEntity": null,
+			"moduleId": "CNTAS",
+			"related": false
+		},
+		{
+			"entityId": "EN_TRANSFEER_796",
+			"isContextEntity": true,
 			"moduleId": "CNTAS",
 			"related": false
 		}

@@ -1,0 +1,110 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+		{
+			"entityId": "EN_TRANSFEER_796",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "Transferencia"
+		}
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "T"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "706714"
+		},
+		{
+			"attributeId": "AT42_CUENTAEG796",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_TRANSFEER_796",
+			"format": "",
+			"name": "@i_nro_cuenta_O",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT69_CUENTAOI796",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "EN_TRANSFEER_796",
+			"format": "",
+			"name": "@i_nro_cuenta_D",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT84_TIPOCUNT796",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_TRANSFEER_796",
+			"format": "",
+			"name": "@i_t_cuenta",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT47_TIPOCUTA796",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "EN_TRANSFEER_796",
+			"format": "",
+			"name": "@i_t_cuenta_D",
+			"type": "ATTRIBUTE",
+			"value": ""
+		},
+		{
+			"attributeId": "AT51_VALORUVL796",
+			"bddType": "decimal",
+			"dataType": "MONEY",
+			"direction": "in",
+			"entityId": "EN_TRANSFEER_796",
+			"format": "",
+			"name": "@i_valor",
+			"type": "ATTRIBUTE",
+			"value": ""
+		}
+	],
+	"name": "BLI_Transferencia",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI3778_bli_transferencia",
+	"patternName": "BLI_Transferencia",
+	"patternType": "Bli",
+	"queries": [
+	],
+	"resultSets": [
+	],
+	"returnEntity": [
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.g3_sp_operaciones",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

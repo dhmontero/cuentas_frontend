@@ -172,6 +172,19 @@
 				],
 				"editMode": false,
 				"queryText": "SELECT"
+			},
+			{
+				"_idQuery": "44bcd713-e551-478d-bf65-3ea2997cd7ac",
+				"columns": [
+					"Numero cuenta",
+					"Fecha creacion",
+					"Fecha modificacion",
+					"Id cliente",
+					"Saldo",
+					"Tipo cuenta"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
 			}
 		],
 		"variables": [

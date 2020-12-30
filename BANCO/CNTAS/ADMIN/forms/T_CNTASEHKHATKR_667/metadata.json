@@ -2,7 +2,7 @@
 	"entities": [
 		{
 			"entityId": "EN_2DWTFTYSE_998",
-			"isContextEntity": null,
+			"isContextEntity": true,
 			"moduleId": "CNTAS",
 			"related": false
 		},

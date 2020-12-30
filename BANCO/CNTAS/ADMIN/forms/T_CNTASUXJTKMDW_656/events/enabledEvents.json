@@ -1,6 +1,20 @@
 [
 	{
 		"attributeName": "",
+		"controlId": "CM_TCNTASUX__6_",
+		"controlName": "",
+		"controlType": "",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "",
+		"eventsType": "commandEventType"
+	},
+	{
+		"attributeName": "",
 		"controlId": "Q_CUENITTE_VP60",
 		"controlName": "CuentaDestinoQuery",
 		"controlType": "Query",

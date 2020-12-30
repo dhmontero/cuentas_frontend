@@ -20,8 +20,11 @@
 			"LBL_CNTAS_TRANSFEER_84051": "TRANSFERENCIA",
 			"LBL_CNTAS_TRANSFEIR_40973": "Transferrir a:",
 			"LBL_CNTAS_TRANSFERR_30445": "Transferir a:",
+			"LBL_CNTAS_TRANSFERR_57327": "TRANSFERIR",
+			"LBL_CNTAS_TRANSFERR_62208": "TRANSFERIR A:",
 			"LBL_CNTAS_VALORADIO_18769": "Valor a depositar",
-			"LBL_CNTAS_VALORATRE_89141": "Valor a transferir"
+			"LBL_CNTAS_VALORATRE_89141": "Valor a transferir",
+			"LBL_CNTAS_VALORATSS_93295": "Valor a transferir:"
 		},
 		"MSG": {
 		}

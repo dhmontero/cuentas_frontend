@@ -45,6 +45,9 @@
 		},
 		"EN_FILTROCUE_372": {
 			"name": "FiltroCuentaDestino"
+		},
+		"EN_TRANSFEER_796": {
+			"name": "Transferencia"
 		}
 	}
 }

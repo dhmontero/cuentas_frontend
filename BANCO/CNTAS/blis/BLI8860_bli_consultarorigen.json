@@ -47,17 +47,17 @@
 	"patternType": "Bli",
 	"queries": [
 		{
-			"_idQuery": "65b5ea4c-c47a-4c6b-9226-589cdaf42e93",
+			"_idQuery": "44bcd713-e551-478d-bf65-3ea2997cd7ac",
 			"isMapReturn": true,
 			"isReturn": true,
 			"isSingleResult": false,
-			"numberQuery": 5,
+			"numberQuery": 6,
 			"queryName": "SELECT"
 		}
 	],
 	"resultSets": [
 		{
-			"_idQuery": "65b5ea4c-c47a-4c6b-9226-589cdaf42e93",
+			"_idQuery": "44bcd713-e551-478d-bf65-3ea2997cd7ac",
 			"columns": [
 				{
 					"attributeId": "AT95_BANCOSHW998",
@@ -71,7 +71,7 @@
 					"attributeId": "AT61_FECHACEE998",
 					"entityId": "EN_2DWTFTYSE_998",
 					"format": "",
-					"name": " fecha creacion",
+					"name": "Fecha creacion",
 					"position": 2,
 					"type": "ATTRIBUTE"
 				},
@@ -79,7 +79,7 @@
 					"attributeId": "AT96_FECHAMII998",
 					"entityId": "EN_2DWTFTYSE_998",
 					"format": "",
-					"name": " fecha modificacion",
+					"name": "Fecha modificacion",
 					"position": 3,
 					"type": "ATTRIBUTE"
 				},
@@ -97,6 +97,14 @@
 					"format": "",
 					"name": "Saldo",
 					"position": 5,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT6203_6202LOIL998",
+					"entityId": "EN_2DWTFTYSE_998",
+					"format": "",
+					"name": "Tipo cuenta",
+					"position": 6,
 					"type": "ATTRIBUTE"
 				}
 			],
