@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.services.T_CNTASEHKHATKR_667">
+        <implementation class="com.cobiscorp.cobis.cntas.services.T_CNTASEHKHATKR_667"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.cobis.cntas.services.T_CNTASEHKHATKR_667"/>
+        </service>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.services.T_CNTASEHKHATKR_667" private="false"/>
+        <reference name="formEventBuilder" interface="com.cobiscorp.designer.api.builder.FormEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(task.module=CNTAS)(task.submodule=ADMIN)(task.id=T_CNTASEHKHATKR_667)(task.version=1.0.0))" bind="addFormEventBuilder" unbind="removeFormEventBuilder" checked="true" strategy="event"/>
+        <reference name="VW_TRANSFEREE_554" interface="com.cobiscorp.designer.api.builder.ViewEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(view.id=VW_TRANSFEREE_554)(view.version=1.0.0))" bind="addViewEventBuilder" unbind="removeViewEventBuilder" checked="true" strategy="event"/>
+        <reference name="QV_MN24_MNM48" interface="com.cobiscorp.designer.api.builder.QueryViewEventBuilder" cardinality="0..n" policy="dynamic" target="(queryView.id=QV_MN24_MNM48)" bind="addQueyViewEventBuilder" unbind="removeQueyViewEventBuilder" checked="true" strategy="event"/>
+        <reference name="Q_CUENAAAA_US24" interface="com.cobiscorp.designer.api.builder.QueryEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(query.id=Q_CUENAAAA_US24)(query.version=1.0.0))" bind="addQueryEventBuilder" unbind="removeQueryEventBuilder" checked="true" strategy="event"/>
+        <reference name="LoadCatalogCobis" interface="com.cobiscorp.designer.api.customization.ILoadCatalogCobis" cardinality="0..n" policy="dynamic" bind="addLoadCatalogCobis" unbind="removeLoadCatalogCobis" checked="true" strategy="event"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.services.T_CNTASTHKYYPOH_380">
+        <implementation class="com.cobiscorp.cobis.cntas.services.T_CNTASTHKYYPOH_380"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.cobis.cntas.services.T_CNTASTHKYYPOH_380"/>
+        </service>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.services.T_CNTASTHKYYPOH_380" private="false"/>
+        <reference name="formEventBuilder" interface="com.cobiscorp.designer.api.builder.FormEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(task.module=CNTAS)(task.submodule=ADMIN)(task.id=T_CNTASTHKYYPOH_380)(task.version=1.0.0))" bind="addFormEventBuilder" unbind="removeFormEventBuilder" checked="true" strategy="event"/>
+        <reference name="VW_FRMCREAREU_568" interface="com.cobiscorp.designer.api.builder.ViewEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(view.id=VW_FRMCREAREU_568)(view.version=1.0.0))" bind="addViewEventBuilder" unbind="removeViewEventBuilder" checked="true" strategy="event"/>
+        <reference name="QV_US83_NKI70" interface="com.cobiscorp.designer.api.builder.QueryViewEventBuilder" cardinality="0..n" policy="dynamic" target="(queryView.id=QV_US83_NKI70)" bind="addQueyViewEventBuilder" unbind="removeQueyViewEventBuilder" checked="true" strategy="event"/>
+        <reference name="Q_CLIETNEE_OB83" interface="com.cobiscorp.designer.api.builder.QueryEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(query.id=Q_CLIETNEE_OB83)(query.version=1.0.0))" bind="addQueryEventBuilder" unbind="removeQueryEventBuilder" checked="true" strategy="event"/>
+        <reference name="LoadCatalogCobis" interface="com.cobiscorp.designer.api.customization.ILoadCatalogCobis" cardinality="0..n" policy="dynamic" bind="addLoadCatalogCobis" unbind="removeLoadCatalogCobis" checked="true" strategy="event"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.services.T_CNTASUXJTKMDW_656">
+        <implementation class="com.cobiscorp.cobis.cntas.services.T_CNTASUXJTKMDW_656"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.cobis.cntas.services.T_CNTASUXJTKMDW_656"/>
+        </service>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.services.T_CNTASUXJTKMDW_656" private="false"/>
+        <reference name="formEventBuilder" interface="com.cobiscorp.designer.api.builder.FormEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(task.module=CNTAS)(task.submodule=ADMIN)(task.id=T_CNTASUXJTKMDW_656)(task.version=1.0.0))" bind="addFormEventBuilder" unbind="removeFormEventBuilder" checked="true" strategy="event"/>
+        <reference name="VW_CUENTADEIO_794" interface="com.cobiscorp.designer.api.builder.ViewEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(view.id=VW_CUENTADEIO_794)(view.version=1.0.0))" bind="addViewEventBuilder" unbind="removeViewEventBuilder" checked="true" strategy="event"/>
+        <reference name="QV_AR60_BTV68" interface="com.cobiscorp.designer.api.builder.QueryViewEventBuilder" cardinality="0..n" policy="dynamic" target="(queryView.id=QV_AR60_BTV68)" bind="addQueyViewEventBuilder" unbind="removeQueyViewEventBuilder" checked="true" strategy="event"/>
+        <reference name="Q_CUENITTE_VP60" interface="com.cobiscorp.designer.api.builder.QueryEventBuilder" cardinality="0..n" policy="dynamic" target="(&amp;(query.id=Q_CUENITTE_VP60)(query.version=1.0.0))" bind="addQueryEventBuilder" unbind="removeQueryEventBuilder" checked="true" strategy="event"/>
+        <reference name="LoadCatalogCobis" interface="com.cobiscorp.designer.api.customization.ILoadCatalogCobis" cardinality="0..n" policy="dynamic" bind="addLoadCatalogCobis" unbind="removeLoadCatalogCobis" checked="true" strategy="event"/>
+        <reference name="AutocrudService" interface="com.cobiscorp.designer.api.infrastructure.IAutocrudService" cardinality="0..1" policy="dynamic" bind="addAutocrudService" unbind="removeAutocrudService" checked="true" strategy="event"/>
+    </scr:component>
+</components>

@@ -60,40 +60,40 @@
 			"_idQuery": "65b5ea4c-c47a-4c6b-9226-589cdaf42e93",
 			"columns": [
 				{
-					"attributeId": "AT95_BANCOSHW998",
-					"entityId": "EN_2DWTFTYSE_998",
+					"attributeId": "AT52_BANCODZN522",
+					"entityId": "EN_CUENTADSE_522",
 					"format": "",
 					"name": "Numero cuenta",
 					"position": 1,
 					"type": "ATTRIBUTE"
 				},
 				{
-					"attributeId": "AT61_FECHACEE998",
-					"entityId": "EN_2DWTFTYSE_998",
+					"attributeId": "AT52_FECHACNC522",
+					"entityId": "EN_CUENTADSE_522",
 					"format": "",
 					"name": " fecha creacion",
 					"position": 2,
 					"type": "ATTRIBUTE"
 				},
 				{
-					"attributeId": "AT96_FECHAMII998",
-					"entityId": "EN_2DWTFTYSE_998",
+					"attributeId": "AT61_FECHAMAO522",
+					"entityId": "EN_CUENTADSE_522",
 					"format": "",
 					"name": " fecha modificacion",
 					"position": 3,
 					"type": "ATTRIBUTE"
 				},
 				{
-					"attributeId": "AT97_CLIENTEE998",
-					"entityId": "EN_2DWTFTYSE_998",
+					"attributeId": "AT11_CLIENTEE522",
+					"entityId": "EN_CUENTADSE_522",
 					"format": "",
 					"name": "Id cliente",
 					"position": 4,
 					"type": "ATTRIBUTE"
 				},
 				{
-					"attributeId": "AT87_SALDOWDJ998",
-					"entityId": "EN_2DWTFTYSE_998",
+					"attributeId": "AT28_SALDOKWQ522",
+					"entityId": "EN_CUENTADSE_522",
 					"format": "",
 					"name": "Saldo",
 					"position": 5,
@@ -106,12 +106,12 @@
 	],
 	"returnEntity": [
 		{
-			"entityId": "EN_2DWTFTYSE_998",
+			"entityId": "EN_CUENTADSE_522",
 			"module": {
 				"moduleId": "CNTAS",
 				"moduleName": "CUENTAS"
 			},
-			"name": "Cuenta"
+			"name": "CuentaDestino"
 		}
 	],
 	"serverName": "CENTRAL",

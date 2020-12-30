@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.bli.services.impl.BLI4929_bli_cons_cliente">
+        <implementation class="com.cobiscorp.cobis.cntas.bli.services.impl.BLI4929_bli_cons_cliente"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="CNTAS" private="false"/>
+        <property name="bli.id" type="String" value="BLI4929_bli_cons_cliente" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.bli.services.impl.BLI4929_bli_cons_cliente" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5933_bli_consultardestino">
+        <implementation class="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5933_bli_consultardestino"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="CNTAS" private="false"/>
+        <property name="bli.id" type="String" value="BLI5933_bli_consultardestino" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.bli.services.impl.BLI5933_bli_consultardestino" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.cntas.bli.services.impl.BLI8860_bli_consultarorigen">
+        <implementation class="com.cobiscorp.cobis.cntas.bli.services.impl.BLI8860_bli_consultarorigen"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.bli.api.IBLIExecutor"/>
+        </service>
+        <property name="task.module" type="String" value="CNTAS" private="false"/>
+        <property name="bli.id" type="String" value="BLI8860_bli_consultarorigen" private="false"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.cntas.bli.services.impl.BLI8860_bli_consultarorigen" private="false"/>
+    </scr:component>
+</components>
