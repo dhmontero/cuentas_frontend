@@ -8,6 +8,23 @@
 				],
 				"returnEntity": [
 					{
+						"entityId": "EN_FILTRONCN_480",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI2812_bli_consulta_cliente_nrocuenta",
+			"nameBli": "BLI_consulta_cliente_nroCuenta"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
 						"entityId": "EN_CLIENTENW_161",
 						"moduleId": "CNTAS",
 						"related": false
