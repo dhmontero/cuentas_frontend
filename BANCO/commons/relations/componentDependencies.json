@@ -24,6 +24,76 @@
 		}
 	},
 	"Forms": {
+		"T_CNTASKXJRMSDU_754": {
+			"blis": [
+				"BLI7283_bli_retiro"
+			],
+			"entities": {
+				"EN_FILTRONCN_480": [
+				],
+				"EN_TRANSACCN_247": [
+					"AT86_VALORRJO247"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_RETIRARMQ_99721",
+				"LBL_CNTAS_VALORAREI_73847"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_CNTASNPLFYCEA_329": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT95_BANCOSHW998"
+				],
+				"EN_FILTRONCN_480": [
+					"AT22_SALDOCYC480",
+					"AT29_APELLIDO480",
+					"AT51_TIPOCUTA480",
+					"AT52_CEDULAIM480",
+					"AT63_NOMBREZW480",
+					"AT84_NROCUEAN480"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_DEPOSITOO_18617",
+				"LBL_CNTAS_NROCUENAT_25182"
+			],
+			"queries": {
+				"Q_FILTCRAT_SG91": [
+					"",
+					"",
+					"",
+					"",
+					"QM_FILTC1RSGA678_02",
+					"QM_FILTC1RSSR424_03",
+					"QM_FILTCASTSA294_01",
+					"QM_FILTCATG19407_04",
+					"QM_FILTCG9RAS842_06",
+					"QM_FILTCR19A9710_05"
+				]
+			},
+			"subForms": [
+			]
+		},
 		"T_CNTASPNFEFZNV_404": {
 			"blis": [
 			],
@@ -47,6 +117,74 @@
 				"LBL_CNTAS_TIPOCUETA_93397"
 			],
 			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_CNTASRLBVROQF_749": {
+			"blis": [
+				"BLI7780_bli_deposito"
+			],
+			"entities": {
+				"EN_FILTRONCN_480": [
+				],
+				"EN_TRANSACCN_247": [
+					"AT86_VALORRJO247"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_DEPOSITRR_80720",
+				"LBL_CNTAS_VALORADIO_41533"
+			],
+			"queries": {
+			},
+			"subForms": [
+			]
+		},
+		"T_CNTASSRLOHIUR_669": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT95_BANCOSHW998"
+				],
+				"EN_FILTRONCN_480": [
+					"AT22_SALDOCYC480",
+					"AT29_APELLIDO480",
+					"AT51_TIPOCUTA480",
+					"AT52_CEDULAIM480",
+					"AT63_NOMBREZW480",
+					"AT84_NROCUEAN480"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_NROCUENAT_25182",
+				"LBL_CNTAS_RETIROGOF_89058"
+			],
+			"queries": {
+				"Q_FILTCRAT_SG91": [
+					"",
+					"",
+					"QM_FILTC1RSGA678_02",
+					"QM_FILTC1RSSR424_03",
+					"QM_FILTCASTSA294_01",
+					"QM_FILTCATG19407_04",
+					"QM_FILTCG9RAS842_06",
+					"QM_FILTCR19A9710_05"
+				]
 			},
 			"subForms": [
 			]

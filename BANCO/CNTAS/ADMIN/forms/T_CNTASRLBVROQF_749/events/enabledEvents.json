@@ -1,0 +1,16 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "VA_VABUTTONWCJXHWL_525949",
+		"controlName": "VA_VABUTTONWCJXHWL_525949",
+		"controlType": "Button",
+		"customEvents": [
+			{
+				"eventName": "executeCommand",
+				"executionType": 7
+			}
+		],
+		"entityName": "Transaccion",
+		"eventsType": "visualAttributeEventType"
+	}
+]

@@ -3,8 +3,20 @@
 		"CompositeForms": {
 		},
 		"Forms": {
+			"T_CNTASKXJRMSDU_754": {
+				"name": "formModalRetiro"
+			},
+			"T_CNTASNPLFYCEA_329": {
+				"name": "formDeposito"
+			},
 			"T_CNTASPNFEFZNV_404": {
 				"name": "frmInsertarCuenta"
+			},
+			"T_CNTASRLBVROQF_749": {
+				"name": "formModalDeposito"
+			},
+			"T_CNTASSRLOHIUR_669": {
+				"name": "formRetiro"
 			},
 			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
