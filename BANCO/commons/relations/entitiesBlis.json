@@ -50,6 +50,40 @@
 			},
 			"idBli": "BLI5297_bli_insertar_ccorriente",
 			"nameBli": "BLI_insertar_cCorriente"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_TRANSACCN_247",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7283_bli_retiro",
+			"nameBli": "BLI_retiro"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+					{
+						"entityId": "EN_TRANSACCN_247",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+				]
+			},
+			"idBli": "BLI7780_bli_deposito",
+			"nameBli": "BLI_deposito"
 		}
 	]
 }
