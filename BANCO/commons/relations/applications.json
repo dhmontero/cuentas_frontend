@@ -5,7 +5,7 @@
 		"forms": {
 			"CNTAS": [
 				{
-					"generated": 4,
+					"generated": 0,
 					"moduleId": "CNTAS",
 					"name": "formTransferencia",
 					"subModuleId": "ADMIN",
