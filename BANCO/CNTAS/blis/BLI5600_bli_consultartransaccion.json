@@ -1,0 +1,121 @@
+{
+	"databaseType": "Sybase",
+	"inputEntity": [
+	],
+	"inputParameters": [
+		{
+			"attributeId": "",
+			"bddType": "char",
+			"dataType": "CHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_operacion",
+			"type": "CONSTANT",
+			"value": "T"
+		},
+		{
+			"attributeId": "",
+			"bddType": "int",
+			"dataType": "INT",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@t_trn",
+			"type": "CONSTANT",
+			"value": "706715"
+		},
+		{
+			"attributeId": "",
+			"bddType": "varchar",
+			"dataType": "VARCHAR",
+			"direction": "in",
+			"entityId": "",
+			"format": "",
+			"name": "@i_cuenta",
+			"type": "CUSTOM",
+			"value": "banco"
+		}
+	],
+	"name": "BLI_ConsultarTransaccion",
+	"outputEntity": [
+	],
+	"outputParameters": [
+	],
+	"patternId": "BLI5600_bli_consultartransaccion",
+	"patternName": "BLI_ConsultarTransaccion",
+	"patternType": "Bli",
+	"queries": [
+		{
+			"_idQuery": "a5c4cf4e-be97-49da-9827-6a48885d8ee0",
+			"isMapReturn": true,
+			"isReturn": true,
+			"isSingleResult": false,
+			"numberQuery": 5,
+			"queryName": "SELECT"
+		}
+	],
+	"resultSets": [
+		{
+			"_idQuery": "a5c4cf4e-be97-49da-9827-6a48885d8ee0",
+			"columns": [
+				{
+					"attributeId": "AT44_IDTRANOO246",
+					"entityId": "EN_TRANSACNI_246",
+					"format": "",
+					"name": "id",
+					"position": 1,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT37_FECHAMFT246",
+					"entityId": "EN_TRANSACNI_246",
+					"format": "",
+					"name": "fecha",
+					"position": 2,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT78_CUENTAWF246",
+					"entityId": "EN_TRANSACNI_246",
+					"format": "",
+					"name": "cuenta",
+					"position": 3,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT71_TIPOTRCA246",
+					"entityId": "EN_TRANSACNI_246",
+					"format": "",
+					"name": "tipo transaccion",
+					"position": 4,
+					"type": "ATTRIBUTE"
+				},
+				{
+					"attributeId": "AT97_TIPOCUTN246",
+					"entityId": "EN_TRANSACNI_246",
+					"format": "",
+					"name": "tipo cuenta",
+					"position": 5,
+					"type": "ATTRIBUTE"
+				}
+			],
+			"number": 1,
+			"singleResult": false
+		}
+	],
+	"returnEntity": [
+		{
+			"entityId": "EN_TRANSACNI_246",
+			"module": {
+				"moduleId": "CNTAS",
+				"moduleName": "CUENTAS"
+			},
+			"name": "Transaccion"
+		}
+	],
+	"serverName": "CENTRAL",
+	"serviceID": "cobis.g3_sp_busqueda_cliente",
+	"type": "SP",
+	"typeMapping": "MAPJava"
+}

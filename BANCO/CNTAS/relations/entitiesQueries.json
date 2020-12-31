@@ -6,6 +6,13 @@
 			}
 		}
 	},
+	"EN_TRANSACNI_246": {
+		"queries": {
+			"Q_TRANIIOA_KE37": {
+				"$ref": "../ADMIN/queries/Q_TRANIIOA_KE37.json#"
+			}
+		}
+	},
 	"EN_FILTRONCN_480": {
 		"queries": {
 			"Q_FILTCRAT_SG91": {

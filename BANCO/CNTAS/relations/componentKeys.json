@@ -18,7 +18,9 @@
 			"T_CNTASSRLOHIUR_669": {
 				"name": "formRetiro"
 			},
-			"T_CNTASTHKYYPOH_380": {
+			"T_CNTASMMWZDNJT_221": {
+				"name": "formConsultaTransaccion"
+			},			"T_CNTASTHKYYPOH_380": {
 				"name": "frmCrearCuenta"
 			}
 		},
@@ -26,9 +28,11 @@
 			"Q_CLIETNEE_OB83": {
 				"name": "ClienteQuery"
 			},
+			"Q_TRANIIOA_KE37": {
+				"name": "TransaccionQuery"
+			},
 			"Q_FILTCRAT_SG91": {
-				"name": "FiltroNroCuentaQuery"
-			}
+				"name": "FiltroNroCuentaQuery"			}
 		},
 		"SubForms": {
 		}
@@ -43,11 +47,13 @@
 		"EN_FILTROCAD_498": {
 			"name": "FiltroCedula"
 		},
+		"EN_TRANSACNI_246": {
+			"name": "AuditoriaTransaccion"
+		},
 		"EN_FILTRONCN_480": {
 			"name": "FiltroNroCuenta"
 		},
 		"EN_TRANSACCN_247": {
-			"name": "Transaccion"
-		}
+			"name": "Transaccion"		}
 	}
 }

@@ -21,9 +21,40 @@
 		"EN_TRANSACCN_247": {
 			"labels": [
 			]
+		},
+		"EN_TRANSACNI_246": {
+			"labels": [
+			]
 		}
 	},
 	"Forms": {
+		"T_CNTASMMWZDNJT_221": {
+			"blis": [
+			],
+			"entities": {
+				"EN_2DWTFTYSE_998": [
+					"AT95_BANCOSHW998"
+				]
+			},
+			"externalEntities": {
+			},
+			"externalQueries": {
+			},
+			"header": [
+			],
+			"labels": [
+				"LBL_CNTAS_BUSCARUYH_74684",
+				"LBL_CNTAS_NOCUENTAA_84657"
+			],
+			"queries": {
+				"Q_TRANIIOA_KE37": [
+					"",
+					""
+				]
+			},
+			"subForms": [
+			]
+		},
 		"T_CNTASKXJRMSDU_754": {
 			"blis": [
 				"BLI7283_bli_retiro"
@@ -235,6 +266,11 @@
 			]
 		},
 		"Q_FILTCRAT_SG91": {
+			"labels": [
+			]
+		},
+		,
+		"Q_TRANIIOA_KE37": {
 			"labels": [
 			]
 		}

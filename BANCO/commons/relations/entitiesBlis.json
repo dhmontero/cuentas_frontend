@@ -101,6 +101,24 @@
 			},
 			"idBli": "BLI7780_bli_deposito",
 			"nameBli": "BLI_deposito"
+		},
+		{
+			"entities": {
+				"inputEntity": [
+				],
+				"outputEntity": [
+				],
+				"returnEntity": [
+					{
+						"entityId": "EN_TRANSACNI_246",
+						"moduleId": "CNTAS",
+						"related": false
+					}
+				]
+			},
+			"idBli": "BLI5600_bli_consultartransaccion",
+			"nameBli": "BLI_ConsultarTransaccion"
 		}
 	]
 }
+

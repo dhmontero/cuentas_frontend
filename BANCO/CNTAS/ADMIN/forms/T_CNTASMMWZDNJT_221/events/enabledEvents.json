@@ -1,0 +1,18 @@
+[
+	{
+		"attributeName": "",
+		"controlId": "Q_TRANIIOA_KE37",
+		"controlName": "TransaccionQuery",
+		"controlType": "Query",
+		"customEvents": [
+			{
+				"eventName": "executeQuery",
+				"executionType": {
+					"$ref": "../../../../../CNTAS/ADMIN/queries/Q_TRANIIOA_KE37.json#/customEvents"
+				}
+			}
+		],
+		"entityName": "Transaccion",
+		"eventsType": "queryEventType"
+	}
+]

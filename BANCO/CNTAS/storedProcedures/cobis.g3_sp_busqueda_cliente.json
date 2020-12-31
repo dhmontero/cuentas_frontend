@@ -1,5 +1,5 @@
 {
-	"filename": "C:\\Users\\Christian\\OneDrive\\Escritorio\\ClearMindsExercise\\Designer\\ConvertSQLToJSON\\g3_sp_busqueda_cliente.sp",
+	"filename": "C:\\Users\\user\\Desktop\\ClearMinds\\CMC\\Archivos_Documentos\\sps\\cobis.g3_sp_busqueda_cliente.sp",
 	"procedure": {
 		"database": "cobis",
 		"name": "g3_sp_busqueda_cliente",
@@ -113,7 +113,7 @@
 		],
 		"queries": [
 			{
-				"_idQuery": "e73d37c5-d559-4276-8f7f-1c799e3220a1",
+				"_idQuery": "3763c829-9f26-4ff4-814c-9ca2264a5cab",
 				"columns": [
 					"N\ufffdmero cuenta",
 					"Saldo",
@@ -122,8 +122,56 @@
 					"Apellido clilente",
 					"Tipo cuenta"
 				],
-				"editMode": true,
+				"editMode": false,
 				"queryText": "SELECT\r\n    \t\t\t\u0027N\ufffdmero cuenta\u0027 = ca_banco,\r\n    \t\t\t\u0027Saldo\u0027 = ca_saldo,\r\n    \t\t\t\u0027Cedula cliente\u0027 = cl_cedula,\r\n\t   \t\t\t\u0027Nombre cliente\u0027 = cl_nombre,\r\n\t   \t\t\t\u0027Apellido clilente\u0027 = cl_apellido,\r\n\t   \t\t\t\u0027Tipo cuenta\u0027 = \u0027CUENTA AHORROS\u0027\r\n\t   \t\t\tFROM"
+			},
+			{
+				"_idQuery": "2f7246d4-c7ac-4ecc-963c-39149c9ef878",
+				"columns": [
+					"N\ufffdmero cuenta",
+					"Saldo",
+					"Cedula cliente",
+					"Nombre cliente",
+					"Apellido clilente",
+					"Tipo cuenta"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n    \t\t\t\u0027N\ufffdmero cuenta\u0027 = cc_banco,\r\n    \t\t\t\u0027Saldo\u0027 = cc_saldo,\r\n    \t\t\t\u0027Cedula cliente\u0027 = cl_cedula,\r\n\t   \t\t\t\u0027Nombre cliente\u0027 = cl_nombre,\r\n\t   \t\t\t\u0027Apellido clilente\u0027 = cl_apellido,\r\n\t   \t\t\t\u0027Tipo cuenta\u0027 = \u0027CUENTA CORRIENTE\u0027\r\n\t   \t\t\tFROM"
+			},
+			{
+				"_idQuery": "ebcecbdd-6e69-4c7e-be95-f03364aea758",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n        \t\tTOP 1\r\n        \t\tcl_id,\r\n\t   \t\t\tcl_nombre,\r\n\t   \t\t\tcl_apellido,\r\n\t   \t\t\tcl_cedula\r\n\t   \t\t\tFROM"
+			},
+			{
+				"_idQuery": "965a32f5-b29c-4c6b-984d-cb851a5c41f3",
+				"columns": [
+					"{0}",
+					"{1}",
+					"{2}",
+					"{3}",
+					"{4}"
+				],
+				"editMode": false,
+				"queryText": "SELECT\r\n    \t\ttr_id,\r\n    \t\ttr_fecha,\r\n    \t\ttr_cuenta,\r\n    \t\ttr_tipo_tr,\r\n    \t\ttr_tipo_cuenta\r\n    \t\tFROM"
+			},
+			{
+				"_idQuery": "a5c4cf4e-be97-49da-9827-6a48885d8ee0",
+				"columns": [
+					"id",
+					"fecha",
+					"cuenta",
+					"tipo transaccion",
+					"tipo cuenta"
+				],
+				"editMode": false,
+				"queryText": "SELECT"
 			}
 		],
 		"variables": [
